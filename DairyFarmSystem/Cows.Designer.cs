@@ -81,6 +81,9 @@ namespace DairyFarmSystem
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -98,11 +101,14 @@ namespace DairyFarmSystem
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel7);
@@ -113,7 +119,7 @@ namespace DairyFarmSystem
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(282, 970);
+            this.panel1.Size = new System.Drawing.Size(276, 970);
             this.panel1.TabIndex = 1;
             // 
             // guna2GradientPanel1
@@ -121,9 +127,9 @@ namespace DairyFarmSystem
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Silver;
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(282, 0);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(276, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1200, 34);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1206, 34);
             this.guna2GradientPanel1.TabIndex = 2;
             // 
             // label3
@@ -485,7 +491,7 @@ namespace DairyFarmSystem
             // 
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(6, 380);
+            this.panel4.Location = new System.Drawing.Point(3, 425);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(267, 67);
             this.panel4.TabIndex = 7;
@@ -516,7 +522,7 @@ namespace DairyFarmSystem
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(6, 307);
+            this.panel5.Location = new System.Drawing.Point(3, 339);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 67);
             this.panel5.TabIndex = 6;
@@ -546,7 +552,7 @@ namespace DairyFarmSystem
             // 
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(3, 234);
+            this.panel3.Location = new System.Drawing.Point(3, 250);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 67);
             this.panel3.TabIndex = 5;
@@ -617,7 +623,7 @@ namespace DairyFarmSystem
             // 
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.label16);
-            this.panel6.Location = new System.Drawing.Point(6, 526);
+            this.panel6.Location = new System.Drawing.Point(6, 595);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(267, 67);
             this.panel6.TabIndex = 9;
@@ -648,7 +654,7 @@ namespace DairyFarmSystem
             this.panel7.Controls.Add(this.label17);
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Controls.Add(this.label18);
-            this.panel7.Location = new System.Drawing.Point(6, 453);
+            this.panel7.Location = new System.Drawing.Point(6, 511);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(267, 67);
             this.panel7.TabIndex = 8;
@@ -688,7 +694,7 @@ namespace DairyFarmSystem
             // 
             this.panel8.Controls.Add(this.pictureBox7);
             this.panel8.Controls.Add(this.label19);
-            this.panel8.Location = new System.Drawing.Point(6, 599);
+            this.panel8.Location = new System.Drawing.Point(6, 681);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(267, 67);
             this.panel8.TabIndex = 10;
@@ -714,12 +720,45 @@ namespace DairyFarmSystem
             this.label19.TabIndex = 5;
             this.label19.Text = "DashBoard";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(6, 12);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(93, 77);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label20.ForeColor = System.Drawing.SystemColors.Control;
+            this.label20.Location = new System.Drawing.Point(105, 59);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(78, 30);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "DFMS";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 14F);
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label21.Location = new System.Drawing.Point(788, 59);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(178, 30);
+            this.label21.TabIndex = 26;
+            this.label21.Text = "Manage Cow";
+            // 
             // Cows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1482, 970);
+            this.Controls.Add(this.label21);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -752,6 +791,7 @@ namespace DairyFarmSystem
             this.Text = "Cows";
             this.Load += new System.EventHandler(this.Cows_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
@@ -776,6 +816,7 @@ namespace DairyFarmSystem
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -831,5 +872,8 @@ namespace DairyFarmSystem
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label21;
     }
 }
