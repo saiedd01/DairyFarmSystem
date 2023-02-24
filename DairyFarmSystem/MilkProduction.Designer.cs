@@ -53,6 +53,10 @@ namespace DairyFarmSystem
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -382,12 +386,68 @@ namespace DairyFarmSystem
             this.label21.TabIndex = 51;
             this.label21.Text = "Manage Cow";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(1213, 344);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(127, 42);
+            this.button4.TabIndex = 56;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(1004, 344);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(141, 42);
+            this.button3.TabIndex = 55;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(833, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 42);
+            this.button2.TabIndex = 54;
+            this.button2.Text = "Edit";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(649, 344);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 42);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // MilkProduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1482, 970);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.guna2DataGridView1);
@@ -445,5 +505,9 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
