@@ -1,4 +1,4 @@
-﻿
+﻿using Bunifu.Framework.UI;
 namespace DairyFarmSystem
 {
     partial class MilkProduction
