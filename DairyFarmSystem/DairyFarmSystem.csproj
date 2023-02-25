@@ -219,6 +219,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Breeding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Breeding.Designer.cs">
+      <DependentUpon>Breeding.cs</DependentUpon>
+    </Compile>
     <Compile Include="CowHealth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Breeding.resx">
+      <DependentUpon>Breeding.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CowHealth.resx">
       <DependentUpon>CowHealth.cs</DependentUpon>
     </EmbeddedResource>
