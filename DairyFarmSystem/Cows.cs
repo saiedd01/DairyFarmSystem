@@ -140,11 +140,59 @@ namespace DairyFarmSystem
             AgeTb.Text = "";
             WeightTb.Text = "";
             PastureTb.Text = "";
+            key = 0;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        int key = 0;
+        private void CowDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CowNameTb.Text = CowDGV.SelectedRows[0].Cells[1].Value.ToString();
+            EarTagTb.Text = CowDGV.SelectedRows[0].Cells[2].Value.ToString();
+            ColorTb.Text = CowDGV.SelectedRows[0].Cells[3].Value.ToString();
+            BreedTb.Text = CowDGV.SelectedRows[0].Cells[4].Value.ToString();
+            WeightTb.Text = CowDGV.SelectedRows[0].Cells[6].Value.ToString();
+            PastureTb.Text = CowDGV.SelectedRows[0].Cells[7].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+                age = 0;
+            }
+            else
+            {
+                key= Convert.ToInt32(CowDGV.SelectedRows[0].Cells[0].Value.ToString());
+                age = Convert.ToInt32(CowDGV.SelectedRows[0].Cells[5].Value.ToString());
+            }
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from CowTbl where CowId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Cow Deleted");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
