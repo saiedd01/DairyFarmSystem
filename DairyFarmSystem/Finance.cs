@@ -28,8 +28,68 @@ namespace DairyFarmSystem
         }
 
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
-        {
+        {}
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {}
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {}
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {}
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {}
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {}
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+            DashBorad ns = new DashBorad();
+            ns.Show();
+            this.Hide();
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Cows ns = new Cows();
+            ns.Show();
+            this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            MilkProduction ns = new MilkProduction();
+            ns.Show();
+            this.Hide();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            CowHealth ns = new CowHealth();
+            ns.Show();
+            this.Hide();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Breeding ns = new Breeding();
+            ns.Show();
+            this.Hide();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            MilkSales ns = new MilkSales();
+            ns.Show();
+            this.Hide();
         }
     }
 }

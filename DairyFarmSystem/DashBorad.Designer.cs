@@ -185,6 +185,7 @@ namespace DairyFarmSystem
             this.label16.Size = new System.Drawing.Size(109, 30);
             this.label16.TabIndex = 5;
             this.label16.Text = "Finance";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // panel7
             // 
@@ -208,6 +209,7 @@ namespace DairyFarmSystem
             this.label17.Size = new System.Drawing.Size(127, 30);
             this.label17.TabIndex = 6;
             this.label17.Text = "Milk Sales";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // pictureBox6
             // 
@@ -260,6 +262,7 @@ namespace DairyFarmSystem
             this.label7.Size = new System.Drawing.Size(119, 30);
             this.label7.TabIndex = 5;
             this.label7.Text = "Breeding";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel5
             // 
@@ -283,6 +286,7 @@ namespace DairyFarmSystem
             this.label15.Size = new System.Drawing.Size(90, 30);
             this.label15.TabIndex = 6;
             this.label15.Text = "Health";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // pictureBox4
             // 
@@ -336,6 +340,7 @@ namespace DairyFarmSystem
             this.label6.Size = new System.Drawing.Size(196, 30);
             this.label6.TabIndex = 5;
             this.label6.Text = "Milk Production";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel2
             // 
@@ -368,6 +373,7 @@ namespace DairyFarmSystem
             this.label5.Size = new System.Drawing.Size(79, 30);
             this.label5.TabIndex = 5;
             this.label5.Text = "Cows";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // DashBorad
             // 
@@ -379,7 +385,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DashBorad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBorad";

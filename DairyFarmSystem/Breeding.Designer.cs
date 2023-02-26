@@ -85,8 +85,6 @@ namespace DairyFarmSystem
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -109,7 +107,6 @@ namespace DairyFarmSystem
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.DimGray;
-            this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(276, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
@@ -163,6 +160,7 @@ namespace DairyFarmSystem
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(267, 67);
             this.panel8.TabIndex = 10;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // pictureBox7
             // 
@@ -193,6 +191,7 @@ namespace DairyFarmSystem
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(267, 67);
             this.panel6.TabIndex = 9;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // pictureBox5
             // 
@@ -225,6 +224,7 @@ namespace DairyFarmSystem
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(267, 67);
             this.panel7.TabIndex = 8;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // label17
             // 
@@ -236,6 +236,7 @@ namespace DairyFarmSystem
             this.label17.Size = new System.Drawing.Size(127, 30);
             this.label17.TabIndex = 6;
             this.label17.Text = "Milk Sales";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // pictureBox6
             // 
@@ -298,6 +299,7 @@ namespace DairyFarmSystem
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 67);
             this.panel5.TabIndex = 6;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label15
             // 
@@ -309,6 +311,7 @@ namespace DairyFarmSystem
             this.label15.Size = new System.Drawing.Size(90, 30);
             this.label15.TabIndex = 6;
             this.label15.Text = "Health";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // pictureBox4
             // 
@@ -339,6 +342,7 @@ namespace DairyFarmSystem
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 67);
             this.panel3.TabIndex = 5;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox2
             // 
@@ -361,6 +365,7 @@ namespace DairyFarmSystem
             this.label6.Size = new System.Drawing.Size(196, 30);
             this.label6.TabIndex = 5;
             this.label6.Text = "Milk Production";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel2
             // 
@@ -371,6 +376,7 @@ namespace DairyFarmSystem
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(267, 67);
             this.panel2.TabIndex = 4;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox1
             // 
@@ -392,6 +398,7 @@ namespace DairyFarmSystem
             this.label5.Size = new System.Drawing.Size(79, 30);
             this.label5.TabIndex = 5;
             this.label5.Text = "Cows";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // button4
             // 
@@ -728,18 +735,6 @@ namespace DairyFarmSystem
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(550, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 30);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "DFSM";
-            // 
             // Breeding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -775,12 +770,10 @@ namespace DairyFarmSystem
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Breeding";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Breeding";
-            this.guna2GradientPanel1.ResumeLayout(false);
-            this.guna2GradientPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -865,6 +858,5 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.Label label1;
     }
 }
