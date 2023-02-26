@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace DairyFarmSystem
 {
@@ -17,6 +18,7 @@ namespace DairyFarmSystem
             InitializeComponent();
         }
 
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
         private void Cows_Load(object sender, EventArgs e)
         {
 
@@ -72,6 +74,11 @@ namespace DairyFarmSystem
             DashBorad ns = new DashBorad();
             ns.Show();
             this.Hide();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
