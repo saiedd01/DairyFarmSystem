@@ -78,7 +78,7 @@ namespace DairyFarmSystem
             this.CowDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Edit = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
@@ -695,18 +695,19 @@ namespace DairyFarmSystem
             this.SaveBtn.UseVisualStyleBackColor = false;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
-            // button2
+            // Edit
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(691, 344);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 42);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Edit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Edit.FlatAppearance.BorderSize = 0;
+            this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit.ForeColor = System.Drawing.Color.White;
+            this.Edit.Location = new System.Drawing.Point(691, 344);
+            this.Edit.Name = "Edit";
+            this.Edit.Size = new System.Drawing.Size(121, 42);
+            this.Edit.TabIndex = 23;
+            this.Edit.Text = "Edit";
+            this.Edit.UseVisualStyleBackColor = false;
+            this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // Delete
             // 
@@ -798,7 +799,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label21);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.Delete);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Edit);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.CowDGV);
@@ -878,7 +879,7 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2DataGridView CowDGV;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
