@@ -237,6 +237,12 @@
     <Compile Include="Cows.Designer.cs">
       <DependentUpon>Cows.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashBorad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBorad.Designer.cs">
+      <DependentUpon>DashBorad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Finance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cows.resx">
       <DependentUpon>Cows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBorad.resx">
+      <DependentUpon>DashBorad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
