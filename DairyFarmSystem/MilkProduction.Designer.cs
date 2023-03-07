@@ -79,7 +79,7 @@ namespace DairyFarmSystem
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.CowId = new System.Windows.Forms.ComboBox();
+            this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -688,13 +688,13 @@ namespace DairyFarmSystem
             this.label5.Text = "Cows";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // CowId
+            // CowIdCb
             // 
-            this.CowId.FormattingEnabled = true;
-            this.CowId.Location = new System.Drawing.Point(391, 193);
-            this.CowId.Name = "CowId";
-            this.CowId.Size = new System.Drawing.Size(181, 35);
-            this.CowId.TabIndex = 79;
+            this.CowIdCb.FormattingEnabled = true;
+            this.CowIdCb.Location = new System.Drawing.Point(391, 193);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(181, 35);
+            this.CowIdCb.TabIndex = 79;
             // 
             // guna2GradientPanel1
             // 
@@ -712,7 +712,7 @@ namespace DairyFarmSystem
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 970);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Controls.Add(this.CowId);
+            this.Controls.Add(this.CowIdCb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.DeleteBtn);
@@ -817,7 +817,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CowId;
+        private System.Windows.Forms.ComboBox CowIdCb;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
     }
 }
