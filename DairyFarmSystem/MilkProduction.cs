@@ -209,7 +209,7 @@ namespace DairyFarmSystem
         {
             if (CowIdCb.SelectedIndex == -1 || CownameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || noonTb.Text == "" || TotalTb.Text == "")
             {
-                MessageBox.Show("Missing Data");
+                MessageBox.Show("Select Product");
             }
             else
             {
