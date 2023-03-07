@@ -89,6 +89,19 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from CowsTbl Where CowId=" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach(DataRow dr in dt.Rows)
+            {
+                CownameTb.Text = dr["CowName"].ToString();
+            }
+        }
         private void Clear()
         {
             CownameTb.Text = "";
@@ -122,6 +135,16 @@ namespace DairyFarmSystem
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
