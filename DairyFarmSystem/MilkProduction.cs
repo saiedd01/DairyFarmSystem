@@ -146,5 +146,11 @@ namespace DairyFarmSystem
         {
             GetCowName();
         }
+
+        private void PmTb_MouseLeave(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(AmTb.Text) + Convert.ToInt32(PmTb.Text) + Convert.ToInt32(noonTb.Text);
+            TotalTb.Text = "" + total;
+        }
     }
 }
