@@ -89,6 +89,15 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void Clear()
+        {
+            CownameTb.Text = "";
+            AmTb.Text = "";
+            PmTb.Text = "";
+            TotalTb.Text = "";
+        }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (CowIdCb.SelectedIndex == -1 || CownameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || noonTb.Text == "" || TotalTb.Text == "" )
@@ -106,7 +115,7 @@ namespace DairyFarmSystem
                     MessageBox.Show("Milk Saved");
                     con.Close();
                     populate();
-                    //Clear();
+                    Clear();
                 }
                 catch (Exception ex)
                 {
