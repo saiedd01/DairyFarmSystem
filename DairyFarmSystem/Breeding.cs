@@ -133,7 +133,6 @@ namespace DairyFarmSystem
                     con.Close();
                     populate();
                     Clear();
-
                 }
                 catch (Exception ex)
                 {
