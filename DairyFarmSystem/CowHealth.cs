@@ -113,5 +113,10 @@ namespace DairyFarmSystem
         {
             GetCowName();
         }
+
+        private void CostTb_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
