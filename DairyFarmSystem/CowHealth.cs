@@ -131,6 +131,7 @@ namespace DairyFarmSystem
                     MessageBox.Show("Health Issue Saved");
                     con.Close();
                     populate();
+                    Clear();
                     
                 }
                 catch (Exception ex)
