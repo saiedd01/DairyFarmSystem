@@ -199,5 +199,31 @@ namespace DairyFarmSystem
                 }
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAgeTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "update BreedTbl set HeatDate = '" + HeatDate.Value.Date + "' , BreedDate= '" + BreedDate.Value.Date + "' , CowId= " + CowIdCb.SelectedValue.ToString() + " , CowName= '" + CowNameTb.Text + "' , PregDate= '" + PregDate.Value.Date + "' , ExpDateCalved= '" + ExpDate.Value.Date + "' , DateCalved = '" + DateCalved.Value.Date + "', CowAge= " + CowAgeTb.Text + ", Remarks = '" + RemarksTb.Text  + "' where BrId=" + key + " ;";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breeding Updated");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
