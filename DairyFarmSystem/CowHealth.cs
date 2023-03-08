@@ -17,6 +17,7 @@ namespace DairyFarmSystem
         {
             InitializeComponent();
             FillCowId();
+            populate();
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -74,6 +75,17 @@ namespace DairyFarmSystem
             dt.Load(Rdr);
             CowIdCb.ValueMember = "CowId";
             CowIdCb.DataSource = dt;
+            con.Close();
+        }
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from HealthTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            HealtDGV.DataSource = ds.Tables[0];
             con.Close();
         }
         private void SaveBtn_Click(object sender, EventArgs e)
