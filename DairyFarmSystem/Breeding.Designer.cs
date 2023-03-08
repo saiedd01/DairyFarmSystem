@@ -60,10 +60,10 @@ namespace DairyFarmSystem
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.EditBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.CowAgeTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
@@ -400,57 +400,57 @@ namespace DairyFarmSystem
             this.label5.Text = "Cows";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button4
+            // ClearBtn
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1066, 425);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 42);
-            this.button4.TabIndex = 88;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ClearBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClearBtn.FlatAppearance.BorderSize = 0;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearBtn.ForeColor = System.Drawing.Color.White;
+            this.ClearBtn.Location = new System.Drawing.Point(1066, 425);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(127, 42);
+            this.ClearBtn.TabIndex = 88;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // DeleteBtn
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(857, 425);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 42);
-            this.button3.TabIndex = 87;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.DeleteBtn.FlatAppearance.BorderSize = 0;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteBtn.Location = new System.Drawing.Point(857, 425);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(141, 42);
+            this.DeleteBtn.TabIndex = 87;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // EditBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(686, 425);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 42);
-            this.button2.TabIndex = 86;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EditBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.EditBtn.FlatAppearance.BorderSize = 0;
+            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EditBtn.ForeColor = System.Drawing.Color.White;
+            this.EditBtn.Location = new System.Drawing.Point(686, 425);
+            this.EditBtn.Name = "EditBtn";
+            this.EditBtn.Size = new System.Drawing.Size(121, 42);
+            this.EditBtn.TabIndex = 86;
+            this.EditBtn.Text = "Edit";
+            this.EditBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(502, 425);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 42);
-            this.button1.TabIndex = 85;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.SaveBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.SaveBtn.FlatAppearance.BorderSize = 0;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBtn.ForeColor = System.Drawing.Color.White;
+            this.SaveBtn.Location = new System.Drawing.Point(502, 425);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(131, 42);
+            this.SaveBtn.TabIndex = 85;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -764,10 +764,10 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.DeleteBtn);
+            this.Controls.Add(this.EditBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -833,10 +833,10 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button EditBtn;
+        private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuMaterialTextbox CowAgeTb;
         private System.Windows.Forms.Label label11;
