@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -61,6 +62,13 @@ namespace DairyFarmSystem
             MilkSales ns = new MilkSales();
             ns.Show();
             this.Hide();
+        }
+
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
