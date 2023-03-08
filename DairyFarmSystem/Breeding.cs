@@ -156,7 +156,7 @@ namespace DairyFarmSystem
         {
             HeatDate.Text = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
             BreedDate.Text = BreedingDGV.SelectedRows[0].Cells[2].Value.ToString();
-            CowIdCb.SelectedValue = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowIdCb.SelectedValue = BreedingDGV.SelectedRows[0].Cells[3].Value.ToString();
             CowNameTb.Text = BreedingDGV.SelectedRows[0].Cells[4].Value.ToString();
             PregDate.Text = BreedingDGV.SelectedRows[0].Cells[5].Value.ToString();
             ExpDate.Text = BreedingDGV.SelectedRows[0].Cells[6].Value.ToString();
