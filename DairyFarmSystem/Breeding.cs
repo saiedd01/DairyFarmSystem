@@ -103,6 +103,7 @@ namespace DairyFarmSystem
             foreach (DataRow dr in dt.Rows)
             {
                 CowNameTb.Text = dr["CowName"].ToString();
+                CowAgeTb.Text = dr["Age"].ToString();
             }
             con.Close();
         }
@@ -115,7 +116,29 @@ namespace DairyFarmSystem
         }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAgeTb.Text == "" )
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into BreedTbl values('"+ HeatDate.Value.Date + "' ,'" + BreedDate.Value.Date + "' ," + CowIdCb.SelectedValue.ToString() + ",'" + CowNameTb.Text + "','" + PregDate.Value.Date + "','" + ExpDate.Value.Date + "' ,'" + DateCalved.Value.Date + "'," + CowAgeTb.Text + ", '" + RemarksTb .Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Breeding Report Saved");
+                    con.Close();
+                    populate();
+                    Clear();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
