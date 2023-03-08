@@ -118,7 +118,7 @@ namespace DairyFarmSystem
         {
             if (CowIdCb.SelectedIndex == -1 || CowNameTb.Text == "" || RemarksTb.Text == "" || CowAgeTb.Text == "" )
             {
-                MessageBox.Show("Missing Data");
+                MessageBox.Show("Missing Information");
             }
             else
             {
