@@ -79,7 +79,17 @@ namespace DairyFarmSystem
             CowIdCb.DataSource = dt;
             con.Close();
         }
-
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from BreedTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            BreedingDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
