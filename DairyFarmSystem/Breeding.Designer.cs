@@ -65,23 +65,23 @@ namespace DairyFarmSystem
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox7 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CowAgeTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.PregDate = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox8 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.RemarksTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.HeatDate = new System.Windows.Forms.DateTimePicker();
+            this.BreedDate = new System.Windows.Forms.DateTimePicker();
+            this.ExpDate = new System.Windows.Forms.DateTimePicker();
+            this.DateCalved = new System.Windows.Forms.DateTimePicker();
+            this.CowNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.BreedingDGV = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -463,24 +463,24 @@ namespace DairyFarmSystem
             this.label12.TabIndex = 106;
             this.label12.Text = "Age";
             // 
-            // bunifuMaterialTextbox7
+            // CowAgeTb
             // 
-            this.bunifuMaterialTextbox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox7.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox7.HintText = "";
-            this.bunifuMaterialTextbox7.isPassword = false;
-            this.bunifuMaterialTextbox7.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox7.LineThickness = 3;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(1160, 265);
-            this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
-            this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(189, 36);
-            this.bunifuMaterialTextbox7.TabIndex = 105;
-            this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CowAgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CowAgeTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowAgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CowAgeTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CowAgeTb.HintText = "";
+            this.CowAgeTb.isPassword = false;
+            this.CowAgeTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.CowAgeTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.CowAgeTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.CowAgeTb.LineThickness = 3;
+            this.CowAgeTb.Location = new System.Drawing.Point(1160, 265);
+            this.CowAgeTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.CowAgeTb.Name = "CowAgeTb";
+            this.CowAgeTb.Size = new System.Drawing.Size(189, 36);
+            this.CowAgeTb.TabIndex = 105;
+            this.CowAgeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label11
             // 
@@ -504,14 +504,14 @@ namespace DairyFarmSystem
             this.label10.TabIndex = 102;
             this.label10.Text = "Prengance Date";
             // 
-            // dateTimePicker1
+            // PregDate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(368, 269);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(181, 32);
-            this.dateTimePicker1.TabIndex = 101;
+            this.PregDate.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.PregDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.PregDate.Location = new System.Drawing.Point(368, 269);
+            this.PregDate.Name = "PregDate";
+            this.PregDate.Size = new System.Drawing.Size(181, 32);
+            this.PregDate.TabIndex = 101;
             // 
             // label9
             // 
@@ -568,24 +568,24 @@ namespace DairyFarmSystem
             this.label3.TabIndex = 92;
             this.label3.Text = "Heat Date";
             // 
-            // bunifuMaterialTextbox8
+            // RemarksTb
             // 
-            this.bunifuMaterialTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox8.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox8.HintText = "";
-            this.bunifuMaterialTextbox8.isPassword = false;
-            this.bunifuMaterialTextbox8.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox8.LineThickness = 3;
-            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(799, 339);
-            this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
-            this.bunifuMaterialTextbox8.Size = new System.Drawing.Size(173, 36);
-            this.bunifuMaterialTextbox8.TabIndex = 107;
-            this.bunifuMaterialTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.RemarksTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RemarksTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RemarksTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.RemarksTb.HintForeColor = System.Drawing.Color.Empty;
+            this.RemarksTb.HintText = "";
+            this.RemarksTb.isPassword = false;
+            this.RemarksTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.RemarksTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.RemarksTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.RemarksTb.LineThickness = 3;
+            this.RemarksTb.Location = new System.Drawing.Point(799, 339);
+            this.RemarksTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.RemarksTb.Name = "RemarksTb";
+            this.RemarksTb.Size = new System.Drawing.Size(173, 36);
+            this.RemarksTb.TabIndex = 107;
+            this.RemarksTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label13
             // 
@@ -598,68 +598,68 @@ namespace DairyFarmSystem
             this.label13.TabIndex = 109;
             this.label13.Text = "Remarks";
             // 
-            // dateTimePicker2
+            // HeatDate
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(368, 180);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(181, 32);
-            this.dateTimePicker2.TabIndex = 110;
+            this.HeatDate.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.HeatDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.HeatDate.Location = new System.Drawing.Point(368, 180);
+            this.HeatDate.Name = "HeatDate";
+            this.HeatDate.Size = new System.Drawing.Size(181, 32);
+            this.HeatDate.TabIndex = 110;
             // 
-            // dateTimePicker3
+            // BreedDate
             // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(618, 180);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(173, 32);
-            this.dateTimePicker3.TabIndex = 111;
+            this.BreedDate.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.BreedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.BreedDate.Location = new System.Drawing.Point(618, 180);
+            this.BreedDate.Name = "BreedDate";
+            this.BreedDate.Size = new System.Drawing.Size(173, 32);
+            this.BreedDate.TabIndex = 111;
             // 
-            // dateTimePicker4
+            // ExpDate
             // 
-            this.dateTimePicker4.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker4.Location = new System.Drawing.Point(618, 269);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(173, 32);
-            this.dateTimePicker4.TabIndex = 112;
+            this.ExpDate.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ExpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ExpDate.Location = new System.Drawing.Point(618, 269);
+            this.ExpDate.Name = "ExpDate";
+            this.ExpDate.Size = new System.Drawing.Size(173, 32);
+            this.ExpDate.TabIndex = 112;
             // 
-            // dateTimePicker5
+            // DateCalved
             // 
-            this.dateTimePicker5.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker5.Location = new System.Drawing.Point(910, 269);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(177, 32);
-            this.dateTimePicker5.TabIndex = 113;
+            this.DateCalved.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.DateCalved.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateCalved.Location = new System.Drawing.Point(910, 269);
+            this.DateCalved.Name = "DateCalved";
+            this.DateCalved.Size = new System.Drawing.Size(177, 32);
+            this.DateCalved.TabIndex = 113;
             // 
-            // bunifuMaterialTextbox1
+            // CowNameTb
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(1155, 180);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(194, 36);
-            this.bunifuMaterialTextbox1.TabIndex = 114;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CowNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CowNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.CowNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.CowNameTb.HintText = "";
+            this.CowNameTb.isPassword = false;
+            this.CowNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.CowNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.CowNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.CowNameTb.LineThickness = 3;
+            this.CowNameTb.Location = new System.Drawing.Point(1155, 180);
+            this.CowNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.CowNameTb.Name = "CowNameTb";
+            this.CowNameTb.Size = new System.Drawing.Size(194, 36);
+            this.CowNameTb.TabIndex = 114;
+            this.CowNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // comboBox1
+            // CowIdCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(910, 177);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 35);
-            this.comboBox1.TabIndex = 115;
+            this.CowIdCb.FormattingEnabled = true;
+            this.CowIdCb.Location = new System.Drawing.Point(910, 177);
+            this.CowIdCb.Name = "CowIdCb";
+            this.CowIdCb.Size = new System.Drawing.Size(181, 35);
+            this.CowIdCb.TabIndex = 115;
             // 
             // label21
             // 
@@ -744,19 +744,19 @@ namespace DairyFarmSystem
             this.Controls.Add(this.BreedingDGV);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
-            this.Controls.Add(this.dateTimePicker5);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.CowNameTb);
+            this.Controls.Add(this.DateCalved);
+            this.Controls.Add(this.ExpDate);
+            this.Controls.Add(this.BreedDate);
+            this.Controls.Add(this.HeatDate);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.bunifuMaterialTextbox8);
+            this.Controls.Add(this.RemarksTb);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.bunifuMaterialTextbox7);
+            this.Controls.Add(this.CowAgeTb);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.PregDate);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
@@ -838,23 +838,23 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label12;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox7;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CowAgeTb;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker PregDate;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox8;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox RemarksTb;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker HeatDate;
+        private System.Windows.Forms.DateTimePicker BreedDate;
+        private System.Windows.Forms.DateTimePicker ExpDate;
+        private System.Windows.Forms.DateTimePicker DateCalved;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox CowNameTb;
+        private System.Windows.Forms.ComboBox CowIdCb;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2DataGridView BreedingDGV;
