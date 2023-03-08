@@ -106,9 +106,21 @@ namespace DairyFarmSystem
             }
             con.Close();
         }
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            CowAgeTb.Text = "";
+            RemarksTb.Text = "";
+            
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
