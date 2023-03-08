@@ -103,6 +103,16 @@ namespace DairyFarmSystem
             }
             con.Close();
         }
+        private void Clear()
+        {
+            CowNameTb.Text = "";
+            EventTb.Text = "";
+            DiagnosisTb.Text = "";
+            VetNameTb.Text = "";
+            CostTb.Text = "";
+            TreatmentTb.Text = "";
+
+        }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
