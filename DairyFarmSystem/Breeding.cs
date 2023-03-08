@@ -16,6 +16,8 @@ namespace DairyFarmSystem
         public Breeding()
         {
             InitializeComponent();
+            FillCowId();
+            populate();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
