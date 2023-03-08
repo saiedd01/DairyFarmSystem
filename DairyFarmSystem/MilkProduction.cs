@@ -109,6 +109,7 @@ namespace DairyFarmSystem
             AmTb.Text = "";
             PmTb.Text = "";
             TotalTb.Text = "";
+            key = 0;
         }
 
 
