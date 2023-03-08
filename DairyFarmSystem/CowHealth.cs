@@ -88,9 +88,30 @@ namespace DairyFarmSystem
             HealtDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+
+        private void GetCowName()
+        {
+            con.Open();
+            string query = "select * from CowsTbl Where CowId=" + CowIdCb.SelectedValue.ToString() + "";
+            SqlCommand cmd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(dt);
+            foreach (DataRow dr in dt.Rows)
+            {
+                CowNameTb.Text = dr["CowName"].ToString();
+            }
+            con.Close();
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CowIdCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCowName();
         }
     }
 }
