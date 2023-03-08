@@ -112,6 +112,7 @@ namespace DairyFarmSystem
             CowNameTb.Text = "";
             CowAgeTb.Text = "";
             RemarksTb.Text = "";
+            key = 0;
             
         }
         private void SaveBtn_Click(object sender, EventArgs e)
@@ -149,6 +150,28 @@ namespace DairyFarmSystem
         private void ClearBtn_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+        int key = 0;
+        private void BreedingDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            HeatDate.Text = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
+            BreedDate.Text = BreedingDGV.SelectedRows[0].Cells[2].Value.ToString();
+            CowIdCb.SelectedValue = BreedingDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CowNameTb.Text = BreedingDGV.SelectedRows[0].Cells[4].Value.ToString();
+            PregDate.Text = BreedingDGV.SelectedRows[0].Cells[5].Value.ToString();
+            ExpDate.Text = BreedingDGV.SelectedRows[0].Cells[6].Value.ToString();
+            DateCalved.Text = BreedingDGV.SelectedRows[0].Cells[7].Value.ToString();
+            CowAgeTb.Text = BreedingDGV.SelectedRows[0].Cells[8].Value.ToString();
+            RemarksTb.Text = BreedingDGV.SelectedRows[0].Cells[9].Value.ToString();
+            if (CowNameTb.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(BreedingDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }
