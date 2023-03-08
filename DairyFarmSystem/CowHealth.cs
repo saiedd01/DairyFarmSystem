@@ -155,5 +155,11 @@ namespace DairyFarmSystem
         {
             Clear();
         }
+
+        int key = 0;
+        private void HealtDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
