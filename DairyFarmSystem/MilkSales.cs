@@ -16,6 +16,7 @@ namespace DairyFarmSystem
         public MilkSales()
         {
             InitializeComponent();
+            FillEmpId();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
