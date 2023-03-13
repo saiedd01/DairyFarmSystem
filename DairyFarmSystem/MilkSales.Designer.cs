@@ -61,7 +61,7 @@ namespace DairyFarmSystem
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Edit = new System.Windows.Forms.Button();
             this.Save = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -407,18 +407,18 @@ namespace DairyFarmSystem
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Edit
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(732, 339);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 42);
-            this.button2.TabIndex = 64;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Edit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Edit.FlatAppearance.BorderSize = 0;
+            this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit.ForeColor = System.Drawing.Color.White;
+            this.Edit.Location = new System.Drawing.Point(732, 339);
+            this.Edit.Name = "Edit";
+            this.Edit.Size = new System.Drawing.Size(121, 42);
+            this.Edit.TabIndex = 64;
+            this.Edit.Text = "Edit";
+            this.Edit.UseVisualStyleBackColor = false;
             // 
             // Save
             // 
@@ -711,7 +711,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Edit);
             this.Controls.Add(this.Save);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -779,7 +779,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
