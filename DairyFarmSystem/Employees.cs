@@ -42,6 +42,16 @@ namespace DairyFarmSystem
             EmpDGV.DataSource = ds.Tables[0];
             con.Close();
         }
+
+        private void Clear()
+        {
+            NameTb.Text = "";
+            PhoneTb.Text = "";
+            AddressTb.Text = "";
+            GenCb.SelectedIndex = -1;
+            
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text=="")
