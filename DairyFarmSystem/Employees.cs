@@ -16,6 +16,7 @@ namespace DairyFarmSystem
         public Employees()
         {
             InitializeComponent();
+            populate();
         }
 
         private void EmpDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
