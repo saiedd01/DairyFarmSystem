@@ -16,5 +16,15 @@ namespace DairyFarmSystem
         {
             InitializeComponent();
         }
+
+        private void EmpDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
