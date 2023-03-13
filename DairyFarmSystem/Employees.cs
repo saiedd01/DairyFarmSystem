@@ -30,6 +30,17 @@ namespace DairyFarmSystem
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
 
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from EmployeeTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            EmpDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
