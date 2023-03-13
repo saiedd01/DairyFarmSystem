@@ -59,7 +59,7 @@ namespace DairyFarmSystem
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.Save = new System.Windows.Forms.Button();
@@ -381,18 +381,18 @@ namespace DairyFarmSystem
             this.label5.Text = "Cows";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button4
+            // Clear
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1112, 339);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 42);
-            this.button4.TabIndex = 66;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Clear.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Clear.FlatAppearance.BorderSize = 0;
+            this.Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Clear.ForeColor = System.Drawing.Color.White;
+            this.Clear.Location = new System.Drawing.Point(1112, 339);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(127, 42);
+            this.Clear.TabIndex = 66;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = false;
             // 
             // Delete
             // 
@@ -709,7 +709,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bunifuMaterialTextbox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Clear);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Save);
@@ -777,7 +777,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Save;
