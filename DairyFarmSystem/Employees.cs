@@ -19,6 +19,7 @@ namespace DairyFarmSystem
             populate();
         }
 
+        int key = 0;
         private void EmpDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
