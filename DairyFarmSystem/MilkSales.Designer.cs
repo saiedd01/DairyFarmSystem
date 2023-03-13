@@ -66,7 +66,7 @@ namespace DairyFarmSystem
             this.label11 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox6 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label4 = new System.Windows.Forms.Label();
@@ -474,14 +474,14 @@ namespace DairyFarmSystem
             this.label10.TabIndex = 77;
             this.label10.Text = "Date";
             // 
-            // dateTimePicker1
+            // Date
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(411, 181);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(217, 32);
-            this.dateTimePicker1.TabIndex = 76;
+            this.Date.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.Date.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date.Location = new System.Drawing.Point(411, 181);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(217, 32);
+            this.Date.TabIndex = 76;
             // 
             // label9
             // 
@@ -699,7 +699,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label11);
             this.Controls.Add(this.bunifuMaterialTextbox6);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.bunifuMaterialTextbox5);
             this.Controls.Add(this.label4);
@@ -784,7 +784,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox6;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
         private System.Windows.Forms.Label label4;
