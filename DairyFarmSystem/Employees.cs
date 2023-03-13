@@ -22,7 +22,20 @@ namespace DairyFarmSystem
         int key = 0;
         private void EmpDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            NameTb.Text = EmpDGV.SelectedRows[0].Cells[1].Value.ToString();
+            DOB.Text = EmpDGV.SelectedRows[0].Cells[2].Value.ToString();
+            GenCb.SelectedValue = EmpDGV.SelectedRows[0].Cells[3].Value.ToString();
+            PhoneTb.Text = EmpDGV.SelectedRows[0].Cells[4].Value.ToString();
+            AddressTb.Text = EmpDGV.SelectedRows[0].Cells[5].Value.ToString();
+            if (NameTb.Text == "")
+            {
+                key = 0;
 
+            }
+            else
+            {
+                key = Convert.ToInt32(EmpDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
 
         private void label22_Click(object sender, EventArgs e)
@@ -50,7 +63,7 @@ namespace DairyFarmSystem
             PhoneTb.Text = "";
             AddressTb.Text = "";
             GenCb.SelectedIndex = -1;
-            
+            key = 0;   
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
