@@ -44,7 +44,28 @@ namespace DairyFarmSystem
         }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text=="")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into EmployeeTbl values('" + NameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedValue.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Saved");
+                    con.Close();
+                    populate();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
