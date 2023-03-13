@@ -68,7 +68,7 @@ namespace DairyFarmSystem
             this.label10 = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox5 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label8 = new System.Windows.Forms.Label();
@@ -494,24 +494,24 @@ namespace DairyFarmSystem
             this.label9.TabIndex = 75;
             this.label9.Text = "Client Phone";
             // 
-            // bunifuMaterialTextbox5
+            // PhoneTb
             // 
-            this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox5.HintText = "";
-            this.bunifuMaterialTextbox5.isPassword = false;
-            this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(411, 266);
-            this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
-            this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(217, 36);
-            this.bunifuMaterialTextbox5.TabIndex = 74;
-            this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PhoneTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PhoneTb.HintForeColor = System.Drawing.Color.Empty;
+            this.PhoneTb.HintText = "";
+            this.PhoneTb.isPassword = false;
+            this.PhoneTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.PhoneTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneTb.LineThickness = 3;
+            this.PhoneTb.Location = new System.Drawing.Point(411, 266);
+            this.PhoneTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(217, 36);
+            this.PhoneTb.TabIndex = 74;
+            this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label4
             // 
@@ -701,7 +701,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.bunifuMaterialTextbox5);
+            this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bunifuMaterialTextbox3);
             this.Controls.Add(this.label8);
@@ -786,7 +786,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private System.Windows.Forms.Label label8;
