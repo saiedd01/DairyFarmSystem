@@ -97,5 +97,31 @@ namespace DairyFarmSystem
         {
             Clear();
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Select Employee To Be Deleted");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "delete from EmployeeTbl where EmpId= " + key + ";";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Employee Deleted");
+                    con.Close();
+                    populate();
+                    Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }
