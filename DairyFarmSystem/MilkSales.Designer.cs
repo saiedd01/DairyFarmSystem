@@ -60,7 +60,7 @@ namespace DairyFarmSystem
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.Save = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -394,18 +394,18 @@ namespace DairyFarmSystem
             this.button4.Text = "Clear";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // Delete
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(903, 339);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(141, 42);
-            this.button3.TabIndex = 65;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
+            this.Delete.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Delete.FlatAppearance.BorderSize = 0;
+            this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete.ForeColor = System.Drawing.Color.White;
+            this.Delete.Location = new System.Drawing.Point(903, 339);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(141, 42);
+            this.Delete.TabIndex = 65;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = false;
             // 
             // Edit
             // 
@@ -710,7 +710,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.bunifuMaterialTextbox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Delete);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Save);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F);
@@ -778,7 +778,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Delete;
         private System.Windows.Forms.Button Edit;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label label11;
