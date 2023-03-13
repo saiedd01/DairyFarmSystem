@@ -92,5 +92,10 @@ namespace DairyFarmSystem
                 }
             }
         }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
