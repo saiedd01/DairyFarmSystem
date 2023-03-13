@@ -77,6 +77,19 @@ namespace DairyFarmSystem
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
 
+        private void FillEmpId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            dt.Load(Rdr);
+            CowIdCb.ValueMember = "EmpId";
+            CowIdCb.DataSource = dt;
+            con.Close();
+        }
 
         private void Save_Click(object sender, EventArgs e)
         {
