@@ -29,17 +29,17 @@ namespace DairyFarmSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.EmpDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.CowNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.BreedDate = new System.Windows.Forms.DateTimePicker();
+            this.NameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.DOB = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
-            this.CowAgeTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
@@ -50,10 +50,10 @@ namespace DairyFarmSystem
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.GenCb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.AddressTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.EmpDGV)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -61,26 +61,26 @@ namespace DairyFarmSystem
             // 
             // EmpDGV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.EmpDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.EmpDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.EmpDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.EmpDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.EmpDGV.ColumnHeadersHeight = 25;
             this.EmpDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.EmpDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.EmpDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.EmpDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.EmpDGV.Location = new System.Drawing.Point(315, 477);
             this.EmpDGV.Name = "EmpDGV";
@@ -135,33 +135,33 @@ namespace DairyFarmSystem
             this.label22.Text = "Employee List";
             this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
-            // CowNameTb
+            // NameTb
             // 
-            this.CowNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CowNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CowNameTb.HintForeColor = System.Drawing.Color.Empty;
-            this.CowNameTb.HintText = "";
-            this.CowNameTb.isPassword = false;
-            this.CowNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.CowNameTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.CowNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.CowNameTb.LineThickness = 3;
-            this.CowNameTb.Location = new System.Drawing.Point(497, 174);
-            this.CowNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.CowNameTb.Name = "CowNameTb";
-            this.CowNameTb.Size = new System.Drawing.Size(194, 36);
-            this.CowNameTb.TabIndex = 142;
-            this.CowNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.NameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.NameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.NameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.NameTb.HintText = "";
+            this.NameTb.isPassword = false;
+            this.NameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.NameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.NameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.NameTb.LineThickness = 3;
+            this.NameTb.Location = new System.Drawing.Point(497, 174);
+            this.NameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.NameTb.Name = "NameTb";
+            this.NameTb.Size = new System.Drawing.Size(194, 36);
+            this.NameTb.TabIndex = 142;
+            this.NameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // BreedDate
+            // DOB
             // 
-            this.BreedDate.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.BreedDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.BreedDate.Location = new System.Drawing.Point(770, 174);
-            this.BreedDate.Name = "BreedDate";
-            this.BreedDate.Size = new System.Drawing.Size(173, 32);
-            this.BreedDate.TabIndex = 139;
+            this.DOB.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DOB.Location = new System.Drawing.Point(770, 174);
+            this.DOB.Name = "DOB";
+            this.DOB.Size = new System.Drawing.Size(173, 32);
+            this.DOB.TabIndex = 139;
             // 
             // label12
             // 
@@ -174,25 +174,25 @@ namespace DairyFarmSystem
             this.label12.TabIndex = 135;
             this.label12.Text = "Phone";
             // 
-            // CowAgeTb
+            // PhoneTb
             // 
-            this.CowAgeTb.BackColor = System.Drawing.Color.Silver;
-            this.CowAgeTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CowAgeTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CowAgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.CowAgeTb.HintForeColor = System.Drawing.Color.Empty;
-            this.CowAgeTb.HintText = "";
-            this.CowAgeTb.isPassword = false;
-            this.CowAgeTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.CowAgeTb.LineIdleColor = System.Drawing.Color.Gray;
-            this.CowAgeTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.CowAgeTb.LineThickness = 3;
-            this.CowAgeTb.Location = new System.Drawing.Point(900, 263);
-            this.CowAgeTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.CowAgeTb.Name = "CowAgeTb";
-            this.CowAgeTb.Size = new System.Drawing.Size(189, 36);
-            this.CowAgeTb.TabIndex = 134;
-            this.CowAgeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PhoneTb.BackColor = System.Drawing.Color.Silver;
+            this.PhoneTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PhoneTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PhoneTb.HintForeColor = System.Drawing.Color.Empty;
+            this.PhoneTb.HintText = "";
+            this.PhoneTb.isPassword = false;
+            this.PhoneTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.PhoneTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.PhoneTb.LineThickness = 3;
+            this.PhoneTb.Location = new System.Drawing.Point(900, 263);
+            this.PhoneTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(189, 36);
+            this.PhoneTb.TabIndex = 134;
+            this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
@@ -309,16 +309,16 @@ namespace DairyFarmSystem
             this.label8.TabIndex = 147;
             this.label8.Text = "Gender";
             // 
-            // CowIdCb
+            // GenCb
             // 
-            this.CowIdCb.FormattingEnabled = true;
-            this.CowIdCb.Items.AddRange(new object[] {
+            this.GenCb.FormattingEnabled = true;
+            this.GenCb.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.CowIdCb.Location = new System.Drawing.Point(1041, 171);
-            this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(181, 35);
-            this.CowIdCb.TabIndex = 148;
+            this.GenCb.Location = new System.Drawing.Point(1041, 171);
+            this.GenCb.Name = "GenCb";
+            this.GenCb.Size = new System.Drawing.Size(181, 35);
+            this.GenCb.TabIndex = 148;
             // 
             // label4
             // 
@@ -342,24 +342,24 @@ namespace DairyFarmSystem
             this.label1.TabIndex = 150;
             this.label1.Text = "Address";
             // 
-            // bunifuMaterialTextbox1
+            // AddressTb
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(580, 263);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(189, 36);
-            this.bunifuMaterialTextbox1.TabIndex = 149;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.AddressTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.AddressTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AddressTb.HintForeColor = System.Drawing.Color.Empty;
+            this.AddressTb.HintText = "";
+            this.AddressTb.isPassword = false;
+            this.AddressTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.AddressTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.AddressTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.AddressTb.LineThickness = 3;
+            this.AddressTb.Location = new System.Drawing.Point(580, 263);
+            this.AddressTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.AddressTb.Name = "AddressTb";
+            this.AddressTb.Size = new System.Drawing.Size(189, 36);
+            this.AddressTb.TabIndex = 149;
+            this.AddressTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Employees
             // 
@@ -367,16 +367,16 @@ namespace DairyFarmSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1482, 970);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bunifuMaterialTextbox1);
-            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.AddressTb);
+            this.Controls.Add(this.GenCb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.EmpDGV);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.CowNameTb);
-            this.Controls.Add(this.BreedDate);
+            this.Controls.Add(this.NameTb);
+            this.Controls.Add(this.DOB);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.CowAgeTb);
+            this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ClearBtn);
@@ -405,10 +405,10 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2DataGridView EmpDGV;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CowNameTb;
-        private System.Windows.Forms.DateTimePicker BreedDate;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox NameTb;
+        private System.Windows.Forms.DateTimePicker DOB;
         private System.Windows.Forms.Label label12;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox CowAgeTb;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Button DeleteBtn;
@@ -419,9 +419,9 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox CowIdCb;
+        private System.Windows.Forms.ComboBox GenCb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox AddressTb;
     }
 }
