@@ -74,7 +74,7 @@ namespace DairyFarmSystem
             this.label8 = new System.Windows.Forms.Label();
             this.Price = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.TotalTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label21 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label13 = new System.Windows.Forms.Label();
@@ -584,24 +584,24 @@ namespace DairyFarmSystem
             this.label2.TabIndex = 69;
             this.label2.Text = "Total";
             // 
-            // bunifuMaterialTextbox2
+            // TotalTb
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(1041, 266);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(217, 36);
-            this.bunifuMaterialTextbox2.TabIndex = 68;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TotalTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TotalTb.HintForeColor = System.Drawing.Color.Empty;
+            this.TotalTb.HintText = "";
+            this.TotalTb.isPassword = false;
+            this.TotalTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.TotalTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.TotalTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.TotalTb.LineThickness = 3;
+            this.TotalTb.Location = new System.Drawing.Point(1041, 266);
+            this.TotalTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.TotalTb.Name = "TotalTb";
+            this.TotalTb.Size = new System.Drawing.Size(217, 36);
+            this.TotalTb.TabIndex = 68;
+            this.TotalTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label21
             // 
@@ -707,7 +707,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Price);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bunifuMaterialTextbox2);
+            this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Delete);
@@ -792,7 +792,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Price;
         private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox TotalTb;
         private System.Windows.Forms.Label label21;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label13;
