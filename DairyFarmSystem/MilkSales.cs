@@ -105,9 +105,10 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+
         private void Save_Click(object sender, EventArgs e)
         {
-            if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "" || TotalTb.Text == "")
+            if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || ClientNameTb.Text == "" || TotalTb.Text == "")
             {
                 MessageBox.Show("Missing Data");
             }
@@ -116,10 +117,10 @@ namespace DairyFarmSystem
                 try
                 {
                     con.Open();
-                    string Query = "insert into MilkTbl values(" + EmpIdCb.SelectedValue.ToString() + ",'" + CownameTb.Text + "'," + AmTb.Text + "," + noonTb.Text + "," + PmTb.Text + "," + TotalTb.Text + ", '" + Date.Value.Date + "')";
+                    string Query = "insert into MilkSalesTbl values('" + Date.Value.Date + "'," + PriceTb.Text + ",'" + ClientNameTb.Text + "','" + PhoneTb.Text + "'," + EmpIdCb.SelectedValue.ToString() + "," + QuantityTb.Text + ", " + TotalTb.Text+ ")";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Saved");
+                    MessageBox.Show("Product Sold");
                     con.Close();
                     populate();
                     
