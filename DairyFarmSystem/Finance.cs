@@ -16,6 +16,7 @@ namespace DairyFarmSystem
         public Finance()
         {
             InitializeComponent();
+            populate(); 
         }
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
@@ -109,7 +110,28 @@ namespace DairyFarmSystem
 
         private void Save_Click(object sender, EventArgs e)
         {
-
+            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+                    string Query = "insert into ExpenditureTbl values(" + CowIdCb.SelectedValue.ToString() + ",'" + CownameTb.Text + "'," + AmTb.Text + "," + noonTb.Text + "," + PmTb.Text + "," + TotalTb.Text + ", '" + Date.Value.Date + "')";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Product Saved");
+                    con.Close();
+                    populate();
+                    //Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
