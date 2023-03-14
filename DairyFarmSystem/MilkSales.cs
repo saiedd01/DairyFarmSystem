@@ -132,6 +132,7 @@ namespace DairyFarmSystem
                     MessageBox.Show("Product Sold");
                     con.Close();
                     populate();
+                    clear();
                     
                 }
                 catch (Exception ex)
