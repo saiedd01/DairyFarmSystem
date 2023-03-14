@@ -92,6 +92,18 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void populate()
+        {
+            con.Open();
+            string Query = "select * from MilkSalesTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            SalesDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
         private void Save_Click(object sender, EventArgs e)
         {
 
