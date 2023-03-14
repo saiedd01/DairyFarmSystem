@@ -70,7 +70,7 @@ namespace DairyFarmSystem
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.ExpDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -428,7 +428,7 @@ namespace DairyFarmSystem
             this.panel9.Controls.Add(this.comboBox1);
             this.panel9.Controls.Add(this.bunifuMaterialTextbox1);
             this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.dateTimePicker1);
+            this.panel9.Controls.Add(this.ExpDate);
             this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.label8);
             this.panel9.Controls.Add(this.button1);
@@ -540,14 +540,14 @@ namespace DairyFarmSystem
             this.label10.TabIndex = 127;
             this.label10.Text = "Date";
             // 
-            // dateTimePicker1
+            // ExpDate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(23, 88);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(181, 32);
-            this.dateTimePicker1.TabIndex = 126;
+            this.ExpDate.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ExpDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.ExpDate.Location = new System.Drawing.Point(23, 88);
+            this.ExpDate.Name = "ExpDate";
+            this.ExpDate.Size = new System.Drawing.Size(181, 32);
+            this.ExpDate.TabIndex = 126;
             // 
             // label4
             // 
@@ -880,7 +880,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.ComboBox comboBox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker ExpDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
