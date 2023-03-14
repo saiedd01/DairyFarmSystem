@@ -78,7 +78,7 @@ namespace DairyFarmSystem
             this.label21 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.CowIdCb = new System.Windows.Forms.ComboBox();
+            this.EmpIdCb = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SalesDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
@@ -638,13 +638,13 @@ namespace DairyFarmSystem
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1206, 34);
             this.guna2GradientPanel1.TabIndex = 91;
             // 
-            // CowIdCb
+            // EmpIdCb
             // 
-            this.CowIdCb.FormattingEnabled = true;
-            this.CowIdCb.Location = new System.Drawing.Point(351, 174);
-            this.CowIdCb.Name = "CowIdCb";
-            this.CowIdCb.Size = new System.Drawing.Size(181, 35);
-            this.CowIdCb.TabIndex = 93;
+            this.EmpIdCb.FormattingEnabled = true;
+            this.EmpIdCb.Location = new System.Drawing.Point(351, 174);
+            this.EmpIdCb.Name = "EmpIdCb";
+            this.EmpIdCb.Size = new System.Drawing.Size(181, 35);
+            this.EmpIdCb.TabIndex = 93;
             // 
             // label1
             // 
@@ -716,7 +716,7 @@ namespace DairyFarmSystem
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 970);
             this.Controls.Add(this.SalesDGV);
-            this.Controls.Add(this.CowIdCb);
+            this.Controls.Add(this.EmpIdCb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label13);
@@ -821,7 +821,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.ComboBox CowIdCb;
+        private System.Windows.Forms.ComboBox EmpIdCb;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView SalesDGV;
     }
