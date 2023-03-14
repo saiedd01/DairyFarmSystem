@@ -30,9 +30,9 @@ namespace DairyFarmSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MilkSales));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -70,7 +70,7 @@ namespace DairyFarmSystem
             this.label9 = new System.Windows.Forms.Label();
             this.PhoneTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label4 = new System.Windows.Forms.Label();
-            this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.ClientNameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label8 = new System.Windows.Forms.Label();
             this.PriceTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
@@ -528,24 +528,24 @@ namespace DairyFarmSystem
             this.label4.TabIndex = 73;
             this.label4.Text = "Client Name";
             // 
-            // bunifuMaterialTextbox3
+            // ClientNameTb
             // 
-            this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox3.HintText = "";
-            this.bunifuMaterialTextbox3.isPassword = false;
-            this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
-            this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(1167, 173);
-            this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(217, 36);
-            this.bunifuMaterialTextbox3.TabIndex = 72;
-            this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ClientNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.ClientNameTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientNameTb.HintForeColor = System.Drawing.Color.Empty;
+            this.ClientNameTb.HintText = "";
+            this.ClientNameTb.isPassword = false;
+            this.ClientNameTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.ClientNameTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.ClientNameTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.ClientNameTb.LineThickness = 3;
+            this.ClientNameTb.Location = new System.Drawing.Point(1167, 173);
+            this.ClientNameTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.ClientNameTb.Name = "ClientNameTb";
+            this.ClientNameTb.Size = new System.Drawing.Size(217, 36);
+            this.ClientNameTb.TabIndex = 72;
+            this.ClientNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label8
             // 
@@ -659,26 +659,26 @@ namespace DairyFarmSystem
             // 
             // SalesDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.SalesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SalesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.SalesDGV.ColumnHeadersHeight = 25;
             this.SalesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalesDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.SalesDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalesDGV.Location = new System.Drawing.Point(314, 511);
             this.SalesDGV.Name = "SalesDGV";
@@ -728,7 +728,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label9);
             this.Controls.Add(this.PhoneTb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.bunifuMaterialTextbox3);
+            this.Controls.Add(this.ClientNameTb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.PriceTb);
             this.Controls.Add(this.label2);
@@ -813,7 +813,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PhoneTb;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox ClientNameTb;
         private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PriceTb;
         private System.Windows.Forms.Label label2;

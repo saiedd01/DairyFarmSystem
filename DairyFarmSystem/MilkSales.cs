@@ -107,7 +107,7 @@ namespace DairyFarmSystem
 
         private void Save_Click(object sender, EventArgs e)
         {
-            if (.SelectedIndex == -1 || CownameTb.Text == "" || AmTb.Text == "" || PmTb.Text == "" || noonTb.Text == "" || TotalTb.Text == "")
+            if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || TotalTb.Text == "" || TotalTb.Text == "")
             {
                 MessageBox.Show("Missing Data");
             }
@@ -122,7 +122,7 @@ namespace DairyFarmSystem
                     MessageBox.Show("Product Saved");
                     con.Close();
                     populate();
-                    Clear();
+                    
                 }
                 catch (Exception ex)
                 {
