@@ -89,6 +89,8 @@ namespace DairyFarmSystem
             this.label13 = new System.Windows.Forms.Label();
             this.ExpDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.EmpIdLbl = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -424,6 +426,8 @@ namespace DairyFarmSystem
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label23);
+            this.panel9.Controls.Add(this.dateTimePicker1);
             this.panel9.Controls.Add(this.ExpDGV);
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.PurpCb);
@@ -444,7 +448,7 @@ namespace DairyFarmSystem
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(622, 11);
+            this.label2.Location = new System.Drawing.Point(635, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 30);
             this.label2.TabIndex = 131;
@@ -772,12 +776,12 @@ namespace DairyFarmSystem
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.ExpDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.ExpDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ExpDGV.Location = new System.Drawing.Point(403, 51);
+            this.ExpDGV.Location = new System.Drawing.Point(403, 79);
             this.ExpDGV.Name = "ExpDGV";
             this.ExpDGV.RowHeadersVisible = false;
             this.ExpDGV.RowHeadersWidth = 51;
             this.ExpDGV.RowTemplate.Height = 24;
-            this.ExpDGV.Size = new System.Drawing.Size(674, 276);
+            this.ExpDGV.Size = new System.Drawing.Size(674, 248);
             this.ExpDGV.TabIndex = 132;
             this.ExpDGV.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.ExpDGV.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -811,6 +815,26 @@ namespace DairyFarmSystem
             this.EmpIdLbl.Size = new System.Drawing.Size(164, 30);
             this.EmpIdLbl.TabIndex = 125;
             this.EmpIdLbl.Text = "Employee ID";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label23.Location = new System.Drawing.Point(608, 45);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(54, 23);
+            this.label23.TabIndex = 135;
+            this.label23.Text = "Filter";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(668, 44);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(172, 28);
+            this.dateTimePicker1.TabIndex = 134;
             // 
             // Finance
             // 
@@ -920,5 +944,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private Guna.UI2.WinForms.Guna2DataGridView ExpDGV;
         private System.Windows.Forms.Label EmpIdLbl;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
