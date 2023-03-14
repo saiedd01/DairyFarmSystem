@@ -147,5 +147,10 @@ namespace DairyFarmSystem
             int total = Convert.ToInt32(PriceTb.Text) * Convert.ToInt32(QuantityTb.Text);
             TotalTb.Text = "" + total;
         }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
     }
 }
