@@ -16,7 +16,7 @@ namespace DairyFarmSystem
         public Finance()
         {
             InitializeComponent();
-            populate(); 
+            Exppopulate(); 
         }
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
@@ -96,10 +96,22 @@ namespace DairyFarmSystem
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
 
-        private void populate()
+        private void Exppopulate()
         {
             con.Open();
             string Query = "select * from ExpenditureTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            ExpDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
+        private void Incpopulate()
+        {
+            con.Open();
+            string Query = "select * from IncomeTbl";
             SqlDataAdapter sda = new SqlDataAdapter(Query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -129,7 +141,7 @@ namespace DairyFarmSystem
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Expenditure Saved");
                     con.Close();
-                    populate();
+                    Exppopulate();
                     clearExp();
                 }
                 catch (Exception ex)
