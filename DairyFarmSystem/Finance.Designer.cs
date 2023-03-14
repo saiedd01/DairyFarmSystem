@@ -72,7 +72,7 @@ namespace DairyFarmSystem
             this.ExpDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
@@ -431,7 +431,7 @@ namespace DairyFarmSystem
             this.panel9.Controls.Add(this.ExpDate);
             this.panel9.Controls.Add(this.label4);
             this.panel9.Controls.Add(this.label8);
-            this.panel9.Controls.Add(this.button1);
+            this.panel9.Controls.Add(this.Save);
             this.panel9.Controls.Add(this.label1);
             this.panel9.Location = new System.Drawing.Point(319, 122);
             this.panel9.Name = "panel9";
@@ -525,18 +525,18 @@ namespace DairyFarmSystem
             this.label8.TabIndex = 124;
             this.label8.Text = "Purpose";
             // 
-            // button1
+            // Save
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(43, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 42);
-            this.button1.TabIndex = 123;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Save.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Save.FlatAppearance.BorderSize = 0;
+            this.Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Save.ForeColor = System.Drawing.Color.White;
+            this.Save.Location = new System.Drawing.Point(43, 285);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(131, 42);
+            this.Save.TabIndex = 123;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -889,7 +889,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.DateTimePicker ExpDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label3;
