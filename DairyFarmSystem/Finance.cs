@@ -16,7 +16,8 @@ namespace DairyFarmSystem
         public Finance()
         {
             InitializeComponent();
-            Exppopulate(); 
+            Exppopulate();
+            Incpopulate();
         }
 
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
@@ -115,8 +116,8 @@ namespace DairyFarmSystem
             SqlDataAdapter sda = new SqlDataAdapter(Query, con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
-            sda.Fill(ds);
-            ExpDGV.DataSource = ds.Tables[0];
+            sda.Fill(ds); 
+            IncDGV.DataSource = ds.Tables[0];
             con.Close();
         }
 
