@@ -30,9 +30,9 @@ namespace DairyFarmSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MilkSales));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -72,7 +72,7 @@ namespace DairyFarmSystem
             this.label4 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label8 = new System.Windows.Forms.Label();
-            this.Price = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.PriceTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.TotalTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label21 = new System.Windows.Forms.Label();
@@ -465,6 +465,7 @@ namespace DairyFarmSystem
             this.QuantityTb.Size = new System.Drawing.Size(217, 36);
             this.QuantityTb.TabIndex = 78;
             this.QuantityTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.QuantityTb.Leave += new System.EventHandler(this.QuantityTb_Leave);
             // 
             // label10
             // 
@@ -557,24 +558,24 @@ namespace DairyFarmSystem
             this.label8.TabIndex = 71;
             this.label8.Text = "Price";
             // 
-            // Price
+            // PriceTb
             // 
-            this.Price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Price.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Price.HintForeColor = System.Drawing.Color.Empty;
-            this.Price.HintText = "";
-            this.Price.isPassword = false;
-            this.Price.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.Price.LineIdleColor = System.Drawing.Color.Gray;
-            this.Price.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.Price.LineThickness = 3;
-            this.Price.Location = new System.Drawing.Point(884, 173);
-            this.Price.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(217, 36);
-            this.Price.TabIndex = 70;
-            this.Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.PriceTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PriceTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PriceTb.HintForeColor = System.Drawing.Color.Empty;
+            this.PriceTb.HintText = "";
+            this.PriceTb.isPassword = false;
+            this.PriceTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.PriceTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.PriceTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.PriceTb.LineThickness = 3;
+            this.PriceTb.Location = new System.Drawing.Point(884, 173);
+            this.PriceTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.PriceTb.Name = "PriceTb";
+            this.PriceTb.Size = new System.Drawing.Size(217, 36);
+            this.PriceTb.TabIndex = 70;
+            this.PriceTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label2
             // 
@@ -658,26 +659,26 @@ namespace DairyFarmSystem
             // 
             // SalesDGV
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.SalesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.SalesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.SalesDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.SalesDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.SalesDGV.ColumnHeadersHeight = 25;
             this.SalesDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.SalesDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.SalesDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.SalesDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SalesDGV.Location = new System.Drawing.Point(314, 511);
             this.SalesDGV.Name = "SalesDGV";
@@ -729,7 +730,7 @@ namespace DairyFarmSystem
             this.Controls.Add(this.label4);
             this.Controls.Add(this.bunifuMaterialTextbox3);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.Price);
+            this.Controls.Add(this.PriceTb);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TotalTb);
             this.Controls.Add(this.panel1);
@@ -814,7 +815,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
         private System.Windows.Forms.Label label8;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox Price;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox PriceTb;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox TotalTb;
         private System.Windows.Forms.Label label21;
