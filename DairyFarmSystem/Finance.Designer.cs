@@ -66,7 +66,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PurpCb = new System.Windows.Forms.ComboBox();
             this.AmountTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label10 = new System.Windows.Forms.Label();
             this.ExpDate = new System.Windows.Forms.DateTimePicker();
@@ -425,7 +425,7 @@ namespace DairyFarmSystem
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.ExpDGV);
             this.panel9.Controls.Add(this.label2);
-            this.panel9.Controls.Add(this.comboBox1);
+            this.panel9.Controls.Add(this.PurpCb);
             this.panel9.Controls.Add(this.AmountTb);
             this.panel9.Controls.Add(this.label10);
             this.panel9.Controls.Add(this.ExpDate);
@@ -449,19 +449,19 @@ namespace DairyFarmSystem
             this.label2.TabIndex = 131;
             this.label2.Text = "Expenditures List";
             // 
-            // comboBox1
+            // PurpCb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PurpCb.FormattingEnabled = true;
+            this.PurpCb.Items.AddRange(new object[] {
             "Maintenance",
             "Food",
             "Salary",
             "Tax",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(23, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 35);
-            this.comboBox1.TabIndex = 129;
+            this.PurpCb.Location = new System.Drawing.Point(23, 160);
+            this.PurpCb.Name = "PurpCb";
+            this.PurpCb.Size = new System.Drawing.Size(181, 35);
+            this.PurpCb.TabIndex = 129;
             // 
             // AmountTb
             // 
@@ -883,7 +883,7 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PurpCb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox AmountTb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker ExpDate;
