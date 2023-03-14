@@ -79,7 +79,7 @@ namespace DairyFarmSystem
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.IncPurpCb = new System.Windows.Forms.ComboBox();
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label9 = new System.Windows.Forms.Label();
             this.IncDate = new System.Windows.Forms.DateTimePicker();
@@ -562,7 +562,7 @@ namespace DairyFarmSystem
             this.panel10.Controls.Add(this.dateTimePicker3);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.guna2DataGridView2);
-            this.panel10.Controls.Add(this.comboBox2);
+            this.panel10.Controls.Add(this.IncPurpCb);
             this.panel10.Controls.Add(this.bunifuMaterialTextbox2);
             this.panel10.Controls.Add(this.label9);
             this.panel10.Controls.Add(this.IncDate);
@@ -660,13 +660,13 @@ namespace DairyFarmSystem
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // comboBox2
+            // IncPurpCb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(23, 178);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(181, 35);
-            this.comboBox2.TabIndex = 129;
+            this.IncPurpCb.FormattingEnabled = true;
+            this.IncPurpCb.Location = new System.Drawing.Point(23, 178);
+            this.IncPurpCb.Name = "IncPurpCb";
+            this.IncPurpCb.Size = new System.Drawing.Size(181, 35);
+            this.IncPurpCb.TabIndex = 129;
             // 
             // bunifuMaterialTextbox2
             // 
@@ -932,7 +932,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox IncPurpCb;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker IncDate;
