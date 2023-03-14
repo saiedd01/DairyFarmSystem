@@ -105,6 +105,15 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void clear()
+        {
+            EmpIdCb.SelectedIndex = -1;
+            PriceTb.Text = "";
+            PhoneTb.Text = "";
+            QuantityTb.Text = "";
+            ClientNameTb.Text = "";
+            TotalTb.Text = "";
+        }
 
         private void Save_Click(object sender, EventArgs e)
         {
