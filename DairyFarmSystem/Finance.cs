@@ -127,10 +127,10 @@ namespace DairyFarmSystem
                     string Query = "insert into ExpenditureTbl values('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpIdLbl.Text + ")";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Product Saved");
+                    MessageBox.Show("Expenditure Saved");
                     con.Close();
                     populate();
-                    //clearExp();
+                    clearExp();
                 }
                 catch (Exception ex)
                 {
