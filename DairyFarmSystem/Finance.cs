@@ -119,7 +119,7 @@ namespace DairyFarmSystem
                 try
                 {
                     con.Open();
-                    string Query = "insert into ExpenditureTbl values(" + CowIdCb.SelectedValue.ToString() + ",'" + CownameTb.Text + "'," + AmTb.Text + "," + noonTb.Text + "," + PmTb.Text + "," + TotalTb.Text + ", '" + Date.Value.Date + "')";
+                    string Query = "insert into ExpenditureTbl values('" + ExpDate.Value.Date + "','" + PurpCb.SelectedItem.ToString() + "'," + AmountTb.Text + "," + EmpIdLbl.Text + ")";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Product Saved");
