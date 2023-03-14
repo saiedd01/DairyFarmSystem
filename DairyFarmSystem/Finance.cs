@@ -108,6 +108,11 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void clearExp()
+        {
+            PurpCb.SelectedIndex = -1;
+            AmountTb.Text = "";
+        }
         private void Save_Click(object sender, EventArgs e)
         {
             if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
@@ -125,7 +130,7 @@ namespace DairyFarmSystem
                     MessageBox.Show("Product Saved");
                     con.Close();
                     populate();
-                    //Clear();
+                    //clearExp();
                 }
                 catch (Exception ex)
                 {
