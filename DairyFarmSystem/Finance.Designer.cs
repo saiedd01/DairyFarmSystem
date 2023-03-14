@@ -79,7 +79,7 @@ namespace DairyFarmSystem
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.IncPurpCb = new System.Windows.Forms.ComboBox();
-            this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.IncAmountTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label9 = new System.Windows.Forms.Label();
             this.IncDate = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
@@ -563,7 +563,7 @@ namespace DairyFarmSystem
             this.panel10.Controls.Add(this.dateTimePicker3);
             this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.IncPurpCb);
-            this.panel10.Controls.Add(this.bunifuMaterialTextbox2);
+            this.panel10.Controls.Add(this.IncAmountTb);
             this.panel10.Controls.Add(this.label9);
             this.panel10.Controls.Add(this.IncDate);
             this.panel10.Controls.Add(this.label11);
@@ -616,24 +616,24 @@ namespace DairyFarmSystem
             this.IncPurpCb.Size = new System.Drawing.Size(181, 35);
             this.IncPurpCb.TabIndex = 129;
             // 
-            // bunifuMaterialTextbox2
+            // IncAmountTb
             // 
-            this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox2.HintText = "";
-            this.bunifuMaterialTextbox2.isPassword = false;
-            this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(23, 266);
-            this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
-            this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(194, 30);
-            this.bunifuMaterialTextbox2.TabIndex = 128;
-            this.bunifuMaterialTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.IncAmountTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.IncAmountTb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncAmountTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.IncAmountTb.HintForeColor = System.Drawing.Color.Empty;
+            this.IncAmountTb.HintText = "";
+            this.IncAmountTb.isPassword = false;
+            this.IncAmountTb.LineFocusedColor = System.Drawing.Color.MidnightBlue;
+            this.IncAmountTb.LineIdleColor = System.Drawing.Color.Gray;
+            this.IncAmountTb.LineMouseHoverColor = System.Drawing.Color.MidnightBlue;
+            this.IncAmountTb.LineThickness = 3;
+            this.IncAmountTb.Location = new System.Drawing.Point(23, 266);
+            this.IncAmountTb.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.IncAmountTb.Name = "IncAmountTb";
+            this.IncAmountTb.Size = new System.Drawing.Size(194, 30);
+            this.IncAmountTb.TabIndex = 128;
+            this.IncAmountTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label9
             // 
@@ -933,7 +933,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox IncPurpCb;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox IncAmountTb;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker IncDate;
         private System.Windows.Forms.Label label11;

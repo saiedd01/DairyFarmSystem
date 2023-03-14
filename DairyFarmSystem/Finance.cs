@@ -126,6 +126,12 @@ namespace DairyFarmSystem
             PurpCb.SelectedIndex = -1;
             AmountTb.Text = "";
         }
+        private void clearInc()
+        {
+            IncPurpCb.SelectedIndex = -1;
+            AmountTb.Text = "";
+        }
+
         private void Save_Click(object sender, EventArgs e)
         {
             if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
