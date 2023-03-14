@@ -150,5 +150,10 @@ namespace DairyFarmSystem
                 }
             }
         }
+
+        private void ExpDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
