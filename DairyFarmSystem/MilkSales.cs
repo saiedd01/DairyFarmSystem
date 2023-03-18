@@ -154,6 +154,7 @@ namespace DairyFarmSystem
                     MessageBox.Show("Product Sold");
                     con.Close();
                     populate();
+                    SaveTransaction();
                     clear();
                     
                 }
