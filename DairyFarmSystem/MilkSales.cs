@@ -115,6 +115,28 @@ namespace DairyFarmSystem
             TotalTb.Text = "";
         }
 
+        private void SaveTransaction()
+        {
+            
+            {
+                try
+                {
+                    string Sales = "Sales";
+                    con.Open();
+                    string Query = "insert into IncomeTbl values('" + Date.Value.Date + "','" + Sales + "'," + TotalTb.Text + "," + EmpIdCb.SelectedValue.ToString() + ")";
+                    SqlCommand cmd = new SqlCommand(Query, con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Income Saved");
+                    con.Close();
+                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
         private void Save_Click(object sender, EventArgs e)
         {
             if (EmpIdCb.SelectedIndex == -1 || PriceTb.Text == "" || PhoneTb.Text == "" || QuantityTb.Text == "" || ClientNameTb.Text == "" || TotalTb.Text == "")
