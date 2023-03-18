@@ -17,6 +17,7 @@ namespace DairyFarmSystem
         {
             InitializeComponent();
             Exppopulate();
+            FillEmpId();
             Incpopulate();
         }
 
