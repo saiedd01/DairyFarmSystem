@@ -215,7 +215,7 @@ namespace DairyFarmSystem
                 try
                 {
                     con.Open();
-                    string Query = "insert into IncomeTbl values('" + IncDate.Value.Date + "','" + IncPurpCb.SelectedItem.ToString() + "'," + IncAmountTb.Text + "," + EmpIdLbl.Text + ")";
+                    string Query = "insert into IncomeTbl values('" + IncDate.Value.Date + "','" + IncPurpCb.SelectedItem.ToString() + "'," + IncAmountTb.Text + "," + EmpIdCb.SelectedValue.ToString() + ")";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Income Saved");
