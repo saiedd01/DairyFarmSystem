@@ -135,6 +135,18 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void FilterExp()
+        {
+            con.Open();
+            string Query = "select * from ExpenditureTbl where ExpDate='" + ExpDateFilter.Value.Date + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            IncDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+
         private void clearExp()
         {
             PurpCb.SelectedIndex = -1;
