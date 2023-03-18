@@ -175,7 +175,7 @@ namespace DairyFarmSystem
 
         private void Save_Click(object sender, EventArgs e)
         {
-            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "")
+            if (PurpCb.SelectedIndex == -1 || AmountTb.Text == "" || EmpIdCb.SelectedIndex == -1)
             {
                 MessageBox.Show("Missing Data");
             }
@@ -206,7 +206,7 @@ namespace DairyFarmSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (IncPurpCb.SelectedIndex == -1 || IncAmountTb.Text == "")
+            if (IncPurpCb.SelectedIndex == -1 || IncAmountTb.Text == "" || EmpIdCb.SelectedIndex == -1)
             {
                 MessageBox.Show("Missing Data");
             }
