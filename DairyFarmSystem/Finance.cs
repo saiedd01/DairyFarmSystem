@@ -219,5 +219,10 @@ namespace DairyFarmSystem
         {
             Incpopulate();
         }
+
+        private void ExpDateFilter_ValueChanged(object sender, EventArgs e)
+        {
+            FilterExp();
+        }
     }
 }
