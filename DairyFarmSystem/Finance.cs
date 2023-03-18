@@ -31,7 +31,9 @@ namespace DairyFarmSystem
         }
 
         private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
-        {}
+        {
+            FilterIncome();
+        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {}
