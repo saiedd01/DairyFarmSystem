@@ -91,6 +91,7 @@ namespace DairyFarmSystem
             this.button2 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.EmpIdLbl = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -111,6 +112,7 @@ namespace DairyFarmSystem
             ((System.ComponentModel.ISupportInitialize)(this.ExpDGV)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label21
@@ -631,6 +633,7 @@ namespace DairyFarmSystem
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.pictureBox9);
             this.panel10.Controls.Add(this.IncDGV);
             this.panel10.Controls.Add(this.label22);
             this.panel10.Controls.Add(this.IncomeDateFilter);
@@ -843,6 +846,16 @@ namespace DairyFarmSystem
             this.EmpIdLbl.TabIndex = 125;
             this.EmpIdLbl.Text = "1";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(833, 57);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(41, 28);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 135;
+            this.pictureBox9.TabStop = false;
+            // 
             // Finance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -891,6 +904,7 @@ namespace DairyFarmSystem
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.IncDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -953,5 +967,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private Guna.UI2.WinForms.Guna2DataGridView IncDGV;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
