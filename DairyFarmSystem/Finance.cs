@@ -224,5 +224,10 @@ namespace DairyFarmSystem
         {
             FilterExp();
         }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Exppopulate();
+        }
     }
 }
