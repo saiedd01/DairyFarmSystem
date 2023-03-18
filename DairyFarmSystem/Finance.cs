@@ -147,6 +147,20 @@ namespace DairyFarmSystem
             con.Close();
         }
 
+        private void FillEmpId()
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select EmpId from EmployeeTbl", con);
+            SqlDataReader Rdr;
+            Rdr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("EmpId", typeof(int));
+            dt.Load(Rdr);
+            EmpIdCb.ValueMember = "EmpId";
+            EmpIdCb.DataSource = dt;
+            con.Close();
+        }
+
         private void clearExp()
         {
             PurpCb.SelectedIndex = -1;
