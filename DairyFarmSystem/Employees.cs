@@ -136,7 +136,7 @@ namespace DairyFarmSystem
                 try
                 {
                     con.Open();
-                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "',EmpDob='" + DOB.Value.Date + "', Gender='"+GenCb.SelectedItem.ToString() +"',Phone='"+PhoneTb.Text+ "',Address='" + AddressTb.Text + "' where EmpId=" + key + " ;";
+                    string Query = "update EmployeeTbl set EmpName='" + NameTb.Text + "',EmpDob='" + DOB.Value.Date + "', Gender='"+GenCb.SelectedItem.ToString() +"',Phone='"+PhoneTb.Text+ "',Address='" + AddressTb.Text + "',EmpPass='" + EmpPassTb.Text + "' where EmpId=" + key + " ;";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Updated");
