@@ -82,6 +82,7 @@ namespace DairyFarmSystem
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -424,6 +425,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BorderRadius = 14;
+            this.guna2GradientPanel2.Controls.Add(this.label26);
             this.guna2GradientPanel2.Controls.Add(this.label1);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Green;
@@ -703,6 +705,18 @@ namespace DairyFarmSystem
             this.label25.TabIndex = 129;
             this.label25.Text = "RS";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(14, 62);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(41, 31);
+            this.label26.TabIndex = 128;
+            this.label26.Text = "RS";
+            // 
             // DashBorad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -825,5 +839,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }
