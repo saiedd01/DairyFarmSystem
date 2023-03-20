@@ -83,6 +83,7 @@ namespace DairyFarmSystem
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -472,6 +473,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BorderRadius = 14;
+            this.guna2GradientPanel3.Controls.Add(this.label27);
             this.guna2GradientPanel3.Controls.Add(this.label3);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Fuchsia;
@@ -717,6 +719,18 @@ namespace DairyFarmSystem
             this.label26.TabIndex = 128;
             this.label26.Text = "RS";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(17, 72);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(41, 31);
+            this.label27.TabIndex = 129;
+            this.label27.Text = "RS";
+            // 
             // DashBorad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -840,5 +854,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
     }
 }
