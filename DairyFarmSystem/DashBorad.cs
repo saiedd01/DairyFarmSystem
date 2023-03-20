@@ -107,13 +107,13 @@ namespace DairyFarmSystem
             DataTable dt = new DataTable();
             sda.Fill(dt);
             inc = Convert.ToInt32(dt.Rows[0][0].ToString());
-            IncLbl.Text = "Rs"+dt.Rows[0][0].ToString();
+            IncLbl.Text = "Rs "+dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
             exp = Convert.ToInt32(dt1.Rows[0][0].ToString());
-            ExpLbl.Text = "Rs"+dt1.Rows[0][0].ToString();
+            ExpLbl.Text = "Rs "+dt1.Rows[0][0].ToString();
             bal = inc - exp;
-            BalLbl.Text = "Rs" + bal;
+            BalLbl.Text = "Rs " + bal;
             con.Close();
         }
 
@@ -141,10 +141,10 @@ namespace DairyFarmSystem
             SqlDataAdapter sda1 = new SqlDataAdapter("select Max(ExpAmount) from ExpenditureTbl", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
+            HighAmtLbl.Text = "Rs " + dt.Rows[0][0].ToString();
             DataTable dt1 = new DataTable();
             sda1.Fill(dt1);
-            HighAmtLbl.Text = "Rs" + dt1.Rows[0][0].ToString();
+            HighExpLbl.Text = "Rs " + dt1.Rows[0][0].ToString();
             con.Close();
         }
     }
