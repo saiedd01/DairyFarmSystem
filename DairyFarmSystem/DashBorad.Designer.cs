@@ -390,12 +390,12 @@ namespace DairyFarmSystem
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.BorderThickness = 1;
+            this.guna2GradientPanel2.BorderRadius = 25;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Green;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(318, 161);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(564, 245);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(662, 270);
             this.guna2GradientPanel2.TabIndex = 126;
             // 
             // DashBorad
