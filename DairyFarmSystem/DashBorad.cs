@@ -120,9 +120,14 @@ namespace DairyFarmSystem
         {
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowsTbl", con);
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Sum(TotalMilk) from MilkTbl", con);
+
             DataTable dt = new DataTable();
             sda.Fill(dt);
             CownumLbl.Text= dt.Rows[0][0].ToString();
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            MilkLbl.Text = dt1.Rows[0][0].ToString()+" "+ "Liters";
             con.Close();
         }
     }

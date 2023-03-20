@@ -576,7 +576,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel5.Controls.Add(this.label8);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.LightCoral;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.SandyBrown;
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(179, 211);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(140, 211);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.Size = new System.Drawing.Size(251, 132);
             this.guna2GradientPanel5.TabIndex = 129;
@@ -612,20 +612,20 @@ namespace DairyFarmSystem
             this.guna2GradientPanel6.Controls.Add(this.label9);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.Silver;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.SlateGray;
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(301, 63);
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(269, 63);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
-            this.guna2GradientPanel6.Size = new System.Drawing.Size(251, 132);
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(283, 132);
             this.guna2GradientPanel6.TabIndex = 128;
             // 
             // MilkLbl
             // 
             this.MilkLbl.AutoSize = true;
             this.MilkLbl.BackColor = System.Drawing.Color.Transparent;
-            this.MilkLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.MilkLbl.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.MilkLbl.ForeColor = System.Drawing.Color.White;
-            this.MilkLbl.Location = new System.Drawing.Point(97, 62);
+            this.MilkLbl.Location = new System.Drawing.Point(8, 75);
             this.MilkLbl.Name = "MilkLbl";
-            this.MilkLbl.Size = new System.Drawing.Size(71, 31);
+            this.MilkLbl.Size = new System.Drawing.Size(85, 37);
             this.MilkLbl.TabIndex = 131;
             this.MilkLbl.Text = "Num";
             // 
@@ -635,7 +635,7 @@ namespace DairyFarmSystem
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(9, 10);
+            this.label9.Location = new System.Drawing.Point(22, 10);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(239, 31);
             this.label9.TabIndex = 126;
@@ -662,18 +662,18 @@ namespace DairyFarmSystem
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Khaki;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(13, 63);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
-            this.guna2GradientPanel7.Size = new System.Drawing.Size(251, 132);
+            this.guna2GradientPanel7.Size = new System.Drawing.Size(222, 132);
             this.guna2GradientPanel7.TabIndex = 126;
             // 
             // CownumLbl
             // 
             this.CownumLbl.AutoSize = true;
             this.CownumLbl.BackColor = System.Drawing.Color.Transparent;
-            this.CownumLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.CownumLbl.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.CownumLbl.ForeColor = System.Drawing.Color.White;
-            this.CownumLbl.Location = new System.Drawing.Point(97, 62);
+            this.CownumLbl.Location = new System.Drawing.Point(17, 72);
             this.CownumLbl.Name = "CownumLbl";
-            this.CownumLbl.Size = new System.Drawing.Size(71, 31);
+            this.CownumLbl.Size = new System.Drawing.Size(85, 37);
             this.CownumLbl.TabIndex = 130;
             this.CownumLbl.Text = "Num";
             // 
@@ -683,7 +683,7 @@ namespace DairyFarmSystem
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(86, 10);
+            this.label11.Location = new System.Drawing.Point(68, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 31);
             this.label11.TabIndex = 126;
