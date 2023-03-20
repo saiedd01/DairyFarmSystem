@@ -743,11 +743,11 @@ namespace DairyFarmSystem
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 20F);
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(16, 81);
+            this.label28.Location = new System.Drawing.Point(16, 71);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(41, 31);
+            this.label28.Size = new System.Drawing.Size(55, 40);
             this.label28.TabIndex = 130;
             this.label28.Text = "RS";
             // 
