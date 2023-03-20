@@ -518,8 +518,8 @@ namespace DairyFarmSystem
             // 
             this.guna2GradientPanel5.BorderRadius = 14;
             this.guna2GradientPanel5.Controls.Add(this.label8);
-            this.guna2GradientPanel5.FillColor = System.Drawing.Color.DarkTurquoise;
-            this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.MediumTurquoise;
+            this.guna2GradientPanel5.FillColor = System.Drawing.Color.LightCoral;
+            this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.SandyBrown;
             this.guna2GradientPanel5.Location = new System.Drawing.Point(179, 211);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.Size = new System.Drawing.Size(251, 132);
@@ -531,7 +531,7 @@ namespace DairyFarmSystem
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(63, 10);
+            this.label8.Location = new System.Drawing.Point(53, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(145, 31);
             this.label8.TabIndex = 126;
@@ -541,8 +541,8 @@ namespace DairyFarmSystem
             // 
             this.guna2GradientPanel6.BorderRadius = 14;
             this.guna2GradientPanel6.Controls.Add(this.label9);
-            this.guna2GradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Fuchsia;
+            this.guna2GradientPanel6.FillColor = System.Drawing.Color.Silver;
+            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.SlateGray;
             this.guna2GradientPanel6.Location = new System.Drawing.Point(301, 63);
             this.guna2GradientPanel6.Name = "guna2GradientPanel6";
             this.guna2GradientPanel6.Size = new System.Drawing.Size(251, 132);
@@ -576,8 +576,8 @@ namespace DairyFarmSystem
             // 
             this.guna2GradientPanel7.BorderRadius = 14;
             this.guna2GradientPanel7.Controls.Add(this.label11);
-            this.guna2GradientPanel7.FillColor = System.Drawing.Color.Lime;
-            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Green;
+            this.guna2GradientPanel7.FillColor = System.Drawing.Color.Orange;
+            this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.Khaki;
             this.guna2GradientPanel7.Location = new System.Drawing.Point(13, 63);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.Size = new System.Drawing.Size(251, 132);
