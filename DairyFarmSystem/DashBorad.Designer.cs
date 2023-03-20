@@ -642,8 +642,8 @@ namespace DairyFarmSystem
             this.guna2GradientPanel9.Controls.Add(this.label24);
             this.guna2GradientPanel9.Controls.Add(this.label25);
             this.guna2GradientPanel9.Controls.Add(this.label13);
-            this.guna2GradientPanel9.FillColor = System.Drawing.Color.Red;
-            this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.DarkRed;
+            this.guna2GradientPanel9.FillColor = System.Drawing.Color.Peru;
+            this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.SaddleBrown;
             this.guna2GradientPanel9.Location = new System.Drawing.Point(976, 595);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
             this.guna2GradientPanel9.Size = new System.Drawing.Size(355, 187);
