@@ -61,13 +61,13 @@ namespace DairyFarmSystem
             // 
             // MyProgress
             // 
-            this.MyProgress.BackColor = System.Drawing.Color.Silver;
+            this.MyProgress.BackColor = System.Drawing.Color.DarkSlateGray;
             this.MyProgress.BorderRadius = 5;
             this.MyProgress.Location = new System.Drawing.Point(0, 474);
             this.MyProgress.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.MyProgress.MaximumValue = 100;
             this.MyProgress.Name = "MyProgress";
-            this.MyProgress.ProgressColor = System.Drawing.Color.Teal;
+            this.MyProgress.ProgressColor = System.Drawing.Color.White;
             this.MyProgress.Size = new System.Drawing.Size(823, 12);
             this.MyProgress.TabIndex = 53;
             this.MyProgress.Value = 0;
@@ -80,7 +80,7 @@ namespace DairyFarmSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(823, 482);
             this.Controls.Add(this.MyProgress);
             this.Controls.Add(this.label21);
