@@ -32,13 +32,14 @@ namespace DairyFarmSystem
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(324, 146);
+            this.pictureBox1.Location = new System.Drawing.Point(308, 143);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(142, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -48,13 +49,26 @@ namespace DairyFarmSystem
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label21.Location = new System.Drawing.Point(250, 38);
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 25F);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(185, 23);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(262, 30);
+            this.label21.Size = new System.Drawing.Size(392, 51);
             this.label21.TabIndex = 52;
-            this.label21.Text = "Daily Milk Production";
+            this.label21.Text = "Dairy Farm System";
+            // 
+            // bunifuProgressBar1
+            // 
+            this.bunifuProgressBar1.BackColor = System.Drawing.Color.Silver;
+            this.bunifuProgressBar1.BorderRadius = 5;
+            this.bunifuProgressBar1.Location = new System.Drawing.Point(0, 470);
+            this.bunifuProgressBar1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.bunifuProgressBar1.MaximumValue = 100;
+            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
+            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.Teal;
+            this.bunifuProgressBar1.Size = new System.Drawing.Size(822, 12);
+            this.bunifuProgressBar1.TabIndex = 53;
+            this.bunifuProgressBar1.Value = 0;
             // 
             // Splash
             // 
@@ -62,6 +76,7 @@ namespace DairyFarmSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(823, 482);
+            this.Controls.Add(this.bunifuProgressBar1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Century Gothic", 13.8F);
@@ -80,5 +95,6 @@ namespace DairyFarmSystem
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label21;
+        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
     }
 }
