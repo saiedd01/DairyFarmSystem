@@ -86,7 +86,7 @@ namespace DairyFarmSystem
             this.ExpLbl = new System.Windows.Forms.Label();
             this.BalLbl = new System.Windows.Forms.Label();
             this.CownumLbl = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.MilkLbl = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -560,7 +560,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BorderRadius = 14;
-            this.guna2GradientPanel6.Controls.Add(this.label30);
+            this.guna2GradientPanel6.Controls.Add(this.MilkLbl);
             this.guna2GradientPanel6.Controls.Add(this.label9);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.Silver;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.SlateGray;
@@ -763,17 +763,17 @@ namespace DairyFarmSystem
             this.CownumLbl.TabIndex = 130;
             this.CownumLbl.Text = "Num";
             // 
-            // label30
+            // MilkLbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(95, 72);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(71, 31);
-            this.label30.TabIndex = 131;
-            this.label30.Text = "Num";
+            this.MilkLbl.AutoSize = true;
+            this.MilkLbl.BackColor = System.Drawing.Color.Transparent;
+            this.MilkLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.MilkLbl.ForeColor = System.Drawing.Color.White;
+            this.MilkLbl.Location = new System.Drawing.Point(95, 72);
+            this.MilkLbl.Name = "MilkLbl";
+            this.MilkLbl.Size = new System.Drawing.Size(71, 31);
+            this.MilkLbl.TabIndex = 131;
+            this.MilkLbl.Text = "Num";
             // 
             // label31
             // 
@@ -915,6 +915,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label BalLbl;
         private System.Windows.Forms.Label CownumLbl;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label MilkLbl;
     }
 }
