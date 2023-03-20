@@ -17,6 +17,7 @@ namespace DairyFarmSystem
         {
             InitializeComponent();
             Finance();
+            Logistic();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -112,6 +113,16 @@ namespace DairyFarmSystem
             ExpLbl.Text = "Rs"+dt1.Rows[0][0].ToString();
             bal = inc - exp;
             BalLbl.Text = "Rs" + bal;
+            con.Close();
+        }
+
+        private void Logistic()
+        {
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CowsTbl", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            CownumLbl.Text= dt.Rows[0][0].ToString();
             con.Close();
         }
     }
