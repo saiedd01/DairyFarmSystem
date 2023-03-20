@@ -74,6 +74,8 @@ namespace DairyFarmSystem
             this.label10 = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label11 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -98,6 +100,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel5.SuspendLayout();
             this.guna2GradientPanel6.SuspendLayout();
             this.guna2GradientPanel7.SuspendLayout();
+            this.guna2GradientPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -565,12 +568,12 @@ namespace DairyFarmSystem
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label10.Location = new System.Drawing.Point(208, 5);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 40);
+            this.label10.Size = new System.Drawing.Size(139, 40);
             this.label10.TabIndex = 127;
-            this.label10.Text = "Finance";
+            this.label10.Text = "Logistic";
             // 
             // guna2GradientPanel7
             // 
@@ -589,11 +592,34 @@ namespace DairyFarmSystem
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(66, 10);
+            this.label11.Location = new System.Drawing.Point(86, 10);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 31);
             this.label11.TabIndex = 126;
             this.label11.Text = "Cows";
+            // 
+            // guna2GradientPanel8
+            // 
+            this.guna2GradientPanel8.BorderRadius = 14;
+            this.guna2GradientPanel8.Controls.Add(this.label12);
+            this.guna2GradientPanel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.Fuchsia;
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(377, 595);
+            this.guna2GradientPanel8.Name = "guna2GradientPanel8";
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(355, 187);
+            this.guna2GradientPanel8.TabIndex = 129;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(96, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(161, 31);
+            this.label12.TabIndex = 126;
+            this.label12.Text = "Highest Sale";
             // 
             // DashBorad
             // 
@@ -601,6 +627,7 @@ namespace DairyFarmSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 915);
+            this.Controls.Add(this.guna2GradientPanel8);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.label21);
@@ -652,6 +679,8 @@ namespace DairyFarmSystem
             this.guna2GradientPanel6.PerformLayout();
             this.guna2GradientPanel7.ResumeLayout(false);
             this.guna2GradientPanel7.PerformLayout();
+            this.guna2GradientPanel8.ResumeLayout(false);
+            this.guna2GradientPanel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -703,5 +732,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
         private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
+        private System.Windows.Forms.Label label12;
     }
 }
