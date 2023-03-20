@@ -84,7 +84,7 @@ namespace DairyFarmSystem
             this.label25 = new System.Windows.Forms.Label();
             this.IncLbl = new System.Windows.Forms.Label();
             this.ExpLbl = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.BalLbl = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -501,7 +501,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel4
             // 
             this.guna2GradientPanel4.BorderRadius = 14;
-            this.guna2GradientPanel4.Controls.Add(this.label28);
+            this.guna2GradientPanel4.Controls.Add(this.BalLbl);
             this.guna2GradientPanel4.Controls.Add(this.label4);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.DarkTurquoise;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.MediumTurquoise;
@@ -739,17 +739,17 @@ namespace DairyFarmSystem
             this.ExpLbl.TabIndex = 129;
             this.ExpLbl.Text = "RS";
             // 
-            // label28
+            // BalLbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(16, 71);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(55, 40);
-            this.label28.TabIndex = 130;
-            this.label28.Text = "RS";
+            this.BalLbl.AutoSize = true;
+            this.BalLbl.BackColor = System.Drawing.Color.Transparent;
+            this.BalLbl.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.BalLbl.ForeColor = System.Drawing.Color.White;
+            this.BalLbl.Location = new System.Drawing.Point(16, 71);
+            this.BalLbl.Name = "BalLbl";
+            this.BalLbl.Size = new System.Drawing.Size(55, 40);
+            this.BalLbl.TabIndex = 130;
+            this.BalLbl.Text = "RS";
             // 
             // label29
             // 
@@ -912,7 +912,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label ExpLbl;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label BalLbl;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
