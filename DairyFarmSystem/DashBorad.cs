@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace DairyFarmSystem
         public DashBorad()
         {
             InitializeComponent();
+            Finance();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -91,11 +93,16 @@ namespace DairyFarmSystem
 
         }
 
-        System.Data.SqlClient.SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void Finance()
         {
-
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select sum(IncAmt) from IncomeTbl",con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            IncLbl.Text = dt.Rows[0][0].ToString();
+            con.Close();
         }
     }
 }

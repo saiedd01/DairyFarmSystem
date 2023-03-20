@@ -82,7 +82,7 @@ namespace DairyFarmSystem
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.IncLbl = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -430,7 +430,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BorderRadius = 14;
-            this.guna2GradientPanel2.Controls.Add(this.label26);
+            this.guna2GradientPanel2.Controls.Add(this.IncLbl);
             this.guna2GradientPanel2.Controls.Add(this.label1);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.Lime;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Green;
@@ -715,17 +715,17 @@ namespace DairyFarmSystem
             this.label25.TabIndex = 129;
             this.label25.Text = "RS";
             // 
-            // label26
+            // IncLbl
             // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(14, 62);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(41, 31);
-            this.label26.TabIndex = 128;
-            this.label26.Text = "RS";
+            this.IncLbl.AutoSize = true;
+            this.IncLbl.BackColor = System.Drawing.Color.Transparent;
+            this.IncLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.IncLbl.ForeColor = System.Drawing.Color.White;
+            this.IncLbl.Location = new System.Drawing.Point(14, 62);
+            this.IncLbl.Name = "IncLbl";
+            this.IncLbl.Size = new System.Drawing.Size(41, 31);
+            this.IncLbl.TabIndex = 128;
+            this.IncLbl.Text = "RS";
             // 
             // label27
             // 
@@ -805,7 +805,7 @@ namespace DairyFarmSystem
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DashBorad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DashBorad";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.DashBorad_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -910,7 +910,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
