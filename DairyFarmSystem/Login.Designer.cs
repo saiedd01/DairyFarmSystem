@@ -40,7 +40,7 @@ namespace DairyFarmSystem
             this.label3 = new System.Windows.Forms.Label();
             this.UnameTb = new System.Windows.Forms.TextBox();
             this.PasswordTb = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
             this.RoleCb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -150,18 +150,18 @@ namespace DairyFarmSystem
             this.PasswordTb.Size = new System.Drawing.Size(224, 36);
             this.PasswordTb.TabIndex = 6;
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(417, 433);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 54);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.LoginBtn.FlatAppearance.BorderSize = 0;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.ForeColor = System.Drawing.Color.White;
+            this.LoginBtn.Location = new System.Drawing.Point(417, 433);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(197, 54);
+            this.LoginBtn.TabIndex = 7;
+            this.LoginBtn.Text = "Login";
+            this.LoginBtn.UseVisualStyleBackColor = false;
             // 
             // RoleCb
             // 
@@ -193,7 +193,7 @@ namespace DairyFarmSystem
             this.ClientSize = new System.Drawing.Size(687, 602);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RoleCb);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.PasswordTb);
             this.Controls.Add(this.UnameTb);
             this.Controls.Add(this.label3);
@@ -224,7 +224,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox UnameTb;
         private System.Windows.Forms.TextBox PasswordTb;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
