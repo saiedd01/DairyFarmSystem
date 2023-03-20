@@ -81,8 +81,8 @@ namespace DairyFarmSystem
             this.CownumLbl = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.HighDateLbl = new System.Windows.Forms.Label();
+            this.HighAmtLbl = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label24 = new System.Windows.Forms.Label();
@@ -692,8 +692,8 @@ namespace DairyFarmSystem
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BorderRadius = 14;
-            this.guna2GradientPanel8.Controls.Add(this.label23);
-            this.guna2GradientPanel8.Controls.Add(this.label22);
+            this.guna2GradientPanel8.Controls.Add(this.HighDateLbl);
+            this.guna2GradientPanel8.Controls.Add(this.HighAmtLbl);
             this.guna2GradientPanel8.Controls.Add(this.label12);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Red;
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.DarkRed;
@@ -702,29 +702,29 @@ namespace DairyFarmSystem
             this.guna2GradientPanel8.Size = new System.Drawing.Size(355, 187);
             this.guna2GradientPanel8.TabIndex = 129;
             // 
-            // label23
+            // HighDateLbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(96, 139);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(132, 31);
-            this.label23.TabIndex = 128;
-            this.label23.Text = "Sale Date";
+            this.HighDateLbl.AutoSize = true;
+            this.HighDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighDateLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.HighDateLbl.ForeColor = System.Drawing.Color.White;
+            this.HighDateLbl.Location = new System.Drawing.Point(96, 139);
+            this.HighDateLbl.Name = "HighDateLbl";
+            this.HighDateLbl.Size = new System.Drawing.Size(132, 31);
+            this.HighDateLbl.TabIndex = 128;
+            this.HighDateLbl.Text = "Sale Date";
             // 
-            // label22
+            // HighAmtLbl
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(18, 68);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 31);
-            this.label22.TabIndex = 127;
-            this.label22.Text = "RS";
+            this.HighAmtLbl.AutoSize = true;
+            this.HighAmtLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighAmtLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.HighAmtLbl.ForeColor = System.Drawing.Color.White;
+            this.HighAmtLbl.Location = new System.Drawing.Point(18, 68);
+            this.HighAmtLbl.Name = "HighAmtLbl";
+            this.HighAmtLbl.Size = new System.Drawing.Size(41, 31);
+            this.HighAmtLbl.TabIndex = 127;
+            this.HighAmtLbl.Text = "RS";
             // 
             // label12
             // 
@@ -904,10 +904,10 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label HighAmtLbl;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label HighDateLbl;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label IncLbl;

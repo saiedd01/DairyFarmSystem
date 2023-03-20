@@ -133,5 +133,9 @@ namespace DairyFarmSystem
             EmpnumLbl.Text = dt2.Rows[0][0].ToString();
             con.Close();
         }
+        private void GetMax()
+        {
+
+        }
     }
 }
