@@ -79,6 +79,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -605,6 +606,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BorderRadius = 14;
+            this.guna2GradientPanel8.Controls.Add(this.label23);
             this.guna2GradientPanel8.Controls.Add(this.label22);
             this.guna2GradientPanel8.Controls.Add(this.label12);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.Red;
@@ -660,6 +662,18 @@ namespace DairyFarmSystem
             this.label22.Size = new System.Drawing.Size(41, 31);
             this.label22.TabIndex = 127;
             this.label22.Text = "RS";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(96, 139);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(132, 31);
+            this.label23.TabIndex = 128;
+            this.label23.Text = "Sale Date";
             // 
             // DashBorad
             // 
@@ -780,5 +794,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label23;
     }
 }
