@@ -533,9 +533,9 @@ namespace DairyFarmSystem
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(63, 10);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(115, 31);
+            this.label8.Size = new System.Drawing.Size(145, 31);
             this.label8.TabIndex = 126;
-            this.label8.Text = "Balance";
+            this.label8.Text = "Employees";
             // 
             // guna2GradientPanel6
             // 
@@ -554,11 +554,11 @@ namespace DairyFarmSystem
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(54, 10);
+            this.label9.Location = new System.Drawing.Point(9, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(157, 31);
+            this.label9.Size = new System.Drawing.Size(239, 31);
             this.label9.TabIndex = 126;
-            this.label9.Text = "Expenditure";
+            this.label9.Text = "Milk Stock in Litters";
             // 
             // label10
             // 
@@ -591,9 +591,9 @@ namespace DairyFarmSystem
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(66, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 31);
+            this.label11.Size = new System.Drawing.Size(82, 31);
             this.label11.TabIndex = 126;
-            this.label11.Text = "Income";
+            this.label11.Text = "Cows";
             // 
             // DashBorad
             // 
