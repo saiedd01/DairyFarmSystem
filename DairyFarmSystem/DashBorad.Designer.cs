@@ -80,6 +80,8 @@ namespace DairyFarmSystem
             this.label13 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -631,6 +633,8 @@ namespace DairyFarmSystem
             // guna2GradientPanel9
             // 
             this.guna2GradientPanel9.BorderRadius = 14;
+            this.guna2GradientPanel9.Controls.Add(this.label24);
+            this.guna2GradientPanel9.Controls.Add(this.label25);
             this.guna2GradientPanel9.Controls.Add(this.label13);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.Red;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.DarkRed;
@@ -674,6 +678,30 @@ namespace DairyFarmSystem
             this.label23.Size = new System.Drawing.Size(132, 31);
             this.label23.TabIndex = 128;
             this.label23.Text = "Sale Date";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(98, 139);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(123, 31);
+            this.label24.TabIndex = 130;
+            this.label24.Text = "Exp Date";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(20, 68);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(41, 31);
+            this.label25.TabIndex = 129;
+            this.label25.Text = "RS";
             // 
             // DashBorad
             // 
@@ -795,5 +823,7 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
     }
 }
