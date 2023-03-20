@@ -86,6 +86,8 @@ namespace DairyFarmSystem
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -534,6 +536,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel5
             // 
             this.guna2GradientPanel5.BorderRadius = 14;
+            this.guna2GradientPanel5.Controls.Add(this.label31);
             this.guna2GradientPanel5.Controls.Add(this.label8);
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.LightCoral;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.SandyBrown;
@@ -557,6 +560,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BorderRadius = 14;
+            this.guna2GradientPanel6.Controls.Add(this.label30);
             this.guna2GradientPanel6.Controls.Add(this.label9);
             this.guna2GradientPanel6.FillColor = System.Drawing.Color.Silver;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.SlateGray;
@@ -759,6 +763,30 @@ namespace DairyFarmSystem
             this.label29.TabIndex = 130;
             this.label29.Text = "Num";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(95, 72);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(71, 31);
+            this.label30.TabIndex = 131;
+            this.label30.Text = "Num";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(30, 86);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(143, 31);
+            this.label31.TabIndex = 131;
+            this.label31.Text = "EmpName";
+            // 
             // DashBorad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -885,5 +913,7 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
     }
 }
