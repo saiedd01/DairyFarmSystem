@@ -147,6 +147,7 @@ namespace DairyFarmSystem
             // 
             this.PasswordTb.Location = new System.Drawing.Point(451, 349);
             this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '#';
             this.PasswordTb.Size = new System.Drawing.Size(224, 36);
             this.PasswordTb.TabIndex = 6;
             // 
@@ -185,6 +186,7 @@ namespace DairyFarmSystem
             this.label4.Size = new System.Drawing.Size(78, 30);
             this.label4.TabIndex = 9;
             this.label4.Text = "Reset";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Login
             // 

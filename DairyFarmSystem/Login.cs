@@ -21,5 +21,11 @@ namespace DairyFarmSystem
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            UnameTb.Text = "";
+            PasswordTb.Text = "";
+        }
     }
 }
