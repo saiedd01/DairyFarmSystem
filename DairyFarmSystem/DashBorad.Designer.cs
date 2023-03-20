@@ -505,7 +505,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel4.Controls.Add(this.label4);
             this.guna2GradientPanel4.FillColor = System.Drawing.Color.DarkTurquoise;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.MediumTurquoise;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(174, 201);
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(174, 211);
             this.guna2GradientPanel4.Name = "guna2GradientPanel4";
             this.guna2GradientPanel4.Size = new System.Drawing.Size(251, 132);
             this.guna2GradientPanel4.TabIndex = 129;
@@ -806,6 +806,7 @@ namespace DairyFarmSystem
             this.Name = "DashBorad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBorad";
+            this.Load += new System.EventHandler(this.DashBorad_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

@@ -85,5 +85,17 @@ namespace DairyFarmSystem
             ns.Show();
             this.Hide();
         }
+
+        private void DashBorad_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        System.Data.SqlClient.SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\DFarm.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void Finance()
+        {
+
+        }
     }
 }
