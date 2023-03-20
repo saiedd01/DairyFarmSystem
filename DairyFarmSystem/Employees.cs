@@ -63,12 +63,13 @@ namespace DairyFarmSystem
             PhoneTb.Text = "";
             AddressTb.Text = "";
             GenCb.SelectedIndex = -1;
+            EmpPassTb.Text = "";
             key = 0;   
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text=="")
+            if (NameTb.Text == "" || GenCb.SelectedIndex == -1 || PhoneTb.Text == "" || AddressTb.Text==""||EmpPassTb.Text=="")
             {
                 MessageBox.Show("Missing Data");
             }
@@ -77,7 +78,7 @@ namespace DairyFarmSystem
                 try
                 {
                     con.Open();
-                    string Query = "insert into EmployeeTbl values('" + NameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "')";
+                    string Query = "insert into EmployeeTbl values('" + NameTb.Text + "','" + DOB.Value.Date + "','" + GenCb.SelectedItem.ToString() + "','" + PhoneTb.Text + "','" + AddressTb.Text + "','" + EmpPassTb.Text + "')";
                     SqlCommand cmd = new SqlCommand(Query, con);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Employee Saved");
