@@ -163,6 +163,7 @@ namespace DairyFarmSystem
             this.LoginBtn.TabIndex = 7;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // RoleCb
             // 
