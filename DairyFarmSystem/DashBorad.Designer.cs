@@ -85,8 +85,8 @@ namespace DairyFarmSystem
             this.HighAmtLbl = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.HighExpDateLbl = new System.Windows.Forms.Label();
+            this.HighExpLbl = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -741,8 +741,8 @@ namespace DairyFarmSystem
             // guna2GradientPanel9
             // 
             this.guna2GradientPanel9.BorderRadius = 14;
-            this.guna2GradientPanel9.Controls.Add(this.label24);
-            this.guna2GradientPanel9.Controls.Add(this.label25);
+            this.guna2GradientPanel9.Controls.Add(this.HighExpDateLbl);
+            this.guna2GradientPanel9.Controls.Add(this.HighExpLbl);
             this.guna2GradientPanel9.Controls.Add(this.label13);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.Peru;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.SaddleBrown;
@@ -751,29 +751,29 @@ namespace DairyFarmSystem
             this.guna2GradientPanel9.Size = new System.Drawing.Size(405, 187);
             this.guna2GradientPanel9.TabIndex = 130;
             // 
-            // label24
+            // HighExpDateLbl
             // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 15F);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(98, 139);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(123, 31);
-            this.label24.TabIndex = 130;
-            this.label24.Text = "Exp Date";
+            this.HighExpDateLbl.AutoSize = true;
+            this.HighExpDateLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighExpDateLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.HighExpDateLbl.ForeColor = System.Drawing.Color.White;
+            this.HighExpDateLbl.Location = new System.Drawing.Point(98, 139);
+            this.HighExpDateLbl.Name = "HighExpDateLbl";
+            this.HighExpDateLbl.Size = new System.Drawing.Size(123, 31);
+            this.HighExpDateLbl.TabIndex = 130;
+            this.HighExpDateLbl.Text = "Exp Date";
             // 
-            // label25
+            // HighExpLbl
             // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(20, 68);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(55, 40);
-            this.label25.TabIndex = 129;
-            this.label25.Text = "RS";
+            this.HighExpLbl.AutoSize = true;
+            this.HighExpLbl.BackColor = System.Drawing.Color.Transparent;
+            this.HighExpLbl.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.HighExpLbl.ForeColor = System.Drawing.Color.White;
+            this.HighExpLbl.Location = new System.Drawing.Point(20, 68);
+            this.HighExpLbl.Name = "HighExpLbl";
+            this.HighExpLbl.Size = new System.Drawing.Size(55, 40);
+            this.HighExpLbl.TabIndex = 129;
+            this.HighExpLbl.Text = "RS";
             // 
             // label13
             // 
@@ -908,8 +908,8 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label HighDateLbl;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label HighExpDateLbl;
+        private System.Windows.Forms.Label HighExpLbl;
         private System.Windows.Forms.Label IncLbl;
         private System.Windows.Forms.Label ExpLbl;
         private System.Windows.Forms.Label BalLbl;
