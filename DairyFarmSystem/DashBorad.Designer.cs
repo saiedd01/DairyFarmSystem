@@ -699,7 +699,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.DarkRed;
             this.guna2GradientPanel8.Location = new System.Drawing.Point(377, 595);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(355, 187);
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(385, 187);
             this.guna2GradientPanel8.TabIndex = 129;
             // 
             // HighDateLbl
@@ -718,11 +718,11 @@ namespace DairyFarmSystem
             // 
             this.HighAmtLbl.AutoSize = true;
             this.HighAmtLbl.BackColor = System.Drawing.Color.Transparent;
-            this.HighAmtLbl.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.HighAmtLbl.Font = new System.Drawing.Font("Century Gothic", 20F);
             this.HighAmtLbl.ForeColor = System.Drawing.Color.White;
-            this.HighAmtLbl.Location = new System.Drawing.Point(18, 68);
+            this.HighAmtLbl.Location = new System.Drawing.Point(23, 68);
             this.HighAmtLbl.Name = "HighAmtLbl";
-            this.HighAmtLbl.Size = new System.Drawing.Size(41, 31);
+            this.HighAmtLbl.Size = new System.Drawing.Size(55, 40);
             this.HighAmtLbl.TabIndex = 127;
             this.HighAmtLbl.Text = "RS";
             // 
@@ -730,11 +730,11 @@ namespace DairyFarmSystem
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 22F);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(96, 9);
+            this.label12.Location = new System.Drawing.Point(66, 9);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(161, 31);
+            this.label12.Size = new System.Drawing.Size(235, 44);
             this.label12.TabIndex = 126;
             this.label12.Text = "Highest Sale";
             // 
@@ -748,7 +748,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.SaddleBrown;
             this.guna2GradientPanel9.Location = new System.Drawing.Point(976, 595);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
-            this.guna2GradientPanel9.Size = new System.Drawing.Size(355, 187);
+            this.guna2GradientPanel9.Size = new System.Drawing.Size(405, 187);
             this.guna2GradientPanel9.TabIndex = 130;
             // 
             // label24
@@ -767,11 +767,11 @@ namespace DairyFarmSystem
             // 
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 20F);
             this.label25.ForeColor = System.Drawing.Color.White;
             this.label25.Location = new System.Drawing.Point(20, 68);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 31);
+            this.label25.Size = new System.Drawing.Size(55, 40);
             this.label25.TabIndex = 129;
             this.label25.Text = "RS";
             // 
@@ -779,11 +779,11 @@ namespace DairyFarmSystem
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15F);
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 22F);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(59, 9);
+            this.label13.Location = new System.Drawing.Point(19, 9);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(253, 31);
+            this.label13.Size = new System.Drawing.Size(372, 44);
             this.label13.TabIndex = 126;
             this.label13.Text = "Highest Expenditure";
             // 

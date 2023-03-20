@@ -18,6 +18,7 @@ namespace DairyFarmSystem
             InitializeComponent();
             Finance();
             Logistic();
+            GetMax();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -135,7 +136,11 @@ namespace DairyFarmSystem
         }
         private void GetMax()
         {
-
+            con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Max(IncAmt) from IncomeTbl", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            HighAmtLbl.Text = "Rs" + dt.Rows[0][0].ToString();
         }
     }
 }
