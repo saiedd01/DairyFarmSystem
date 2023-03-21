@@ -29,10 +29,10 @@ namespace DairyFarmSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Breeding));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Breeding));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
@@ -86,6 +86,7 @@ namespace DairyFarmSystem
             this.label22 = new System.Windows.Forms.Label();
             this.BreedingDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.guna2GradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -109,6 +110,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.DimGray;
+            this.guna2GradientPanel1.Controls.Add(this.pictureBox9);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(276, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
@@ -746,12 +748,13 @@ namespace DairyFarmSystem
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(1404, 42);
+            this.pictureBox9.Location = new System.Drawing.Point(1147, 0);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(52, 47);
+            this.pictureBox9.Size = new System.Drawing.Size(47, 34);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 120;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // Breeding
             // 
@@ -759,7 +762,6 @@ namespace DairyFarmSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 970);
-            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.BreedingDGV);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label22);
@@ -793,6 +795,7 @@ namespace DairyFarmSystem
             this.Name = "Breeding";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Breeding";
+            this.guna2GradientPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
