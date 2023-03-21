@@ -239,7 +239,7 @@ namespace DairyFarmSystem
         }
         private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
         {
-
+            SearchCow();
         }
     }
 }
