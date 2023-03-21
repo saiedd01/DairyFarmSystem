@@ -66,9 +66,19 @@ namespace DairyFarmSystem
                             this.Hide();
                             con.Close();
                         }
+                        else
+                        {
+                            MessageBox.Show("Wrong UserName or Password");
+                        }
+                        con.Close();
                     }
+                    
                 }
-           }
+                else
+                {
+                    MessageBox.Show("Select Role");
+                }
+            }
            
         }
     }
