@@ -175,5 +175,10 @@ namespace DairyFarmSystem
         {
             clear();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
