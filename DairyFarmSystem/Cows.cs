@@ -225,5 +225,21 @@ namespace DairyFarmSystem
         {
             Application.Exit();
         }
+
+        private void SearchCow()
+        {
+            con.Open();
+            string query = "Select * from CowsTbl where CowName like '%"+ CowSearchTb.Text + "%'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            CowDGV.DataSource = ds.Tables[0];
+            con.Close();
+        }
+        private void bunifuMaterialTextbox1_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
