@@ -27,6 +27,7 @@ namespace DairyFarmSystem
             GenCb.SelectedValue = EmpDGV.SelectedRows[0].Cells[3].Value.ToString();
             PhoneTb.Text = EmpDGV.SelectedRows[0].Cells[4].Value.ToString();
             AddressTb.Text = EmpDGV.SelectedRows[0].Cells[5].Value.ToString();
+            EmpPassTb.Text = EmpDGV.SelectedRows[0].Cells[6].Value.ToString();
             if (NameTb.Text == "")
             {
                 key = 0;
