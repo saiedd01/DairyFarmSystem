@@ -30,9 +30,9 @@ namespace DairyFarmSystem
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CowHealth));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -83,6 +83,7 @@ namespace DairyFarmSystem
             this.HealtDGV = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.Date = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -100,6 +101,7 @@ namespace DairyFarmSystem
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HealtDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // ClearBtn
@@ -232,7 +234,7 @@ namespace DairyFarmSystem
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(85, 18);
+            this.label19.Location = new System.Drawing.Point(62, 18);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(141, 30);
             this.label19.TabIndex = 5;
@@ -263,7 +265,7 @@ namespace DairyFarmSystem
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(85, 18);
+            this.label16.Location = new System.Drawing.Point(59, 21);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(109, 30);
             this.label16.TabIndex = 5;
@@ -285,7 +287,7 @@ namespace DairyFarmSystem
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(88, 16);
+            this.label17.Location = new System.Drawing.Point(62, 16);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(127, 30);
             this.label17.TabIndex = 6;
@@ -336,7 +338,7 @@ namespace DairyFarmSystem
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(85, 18);
+            this.label7.Location = new System.Drawing.Point(62, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 30);
             this.label7.TabIndex = 5;
@@ -359,7 +361,7 @@ namespace DairyFarmSystem
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(88, 16);
+            this.label15.Location = new System.Drawing.Point(65, 16);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 30);
             this.label15.TabIndex = 6;
@@ -411,7 +413,7 @@ namespace DairyFarmSystem
             this.label6.BackColor = System.Drawing.Color.DimGray;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(65, 13);
+            this.label6.Location = new System.Drawing.Point(62, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 30);
             this.label6.TabIndex = 5;
@@ -443,7 +445,7 @@ namespace DairyFarmSystem
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(88, 16);
+            this.label5.Location = new System.Drawing.Point(65, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 30);
             this.label5.TabIndex = 5;
@@ -674,26 +676,26 @@ namespace DairyFarmSystem
             // 
             // HealtDGV
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.HealtDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HealtDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.HealtDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HealtDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.HealtDGV.ColumnHeadersHeight = 25;
             this.HealtDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 13.8F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.HealtDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 13.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.HealtDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.HealtDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.HealtDGV.Location = new System.Drawing.Point(308, 511);
             this.HealtDGV.Name = "HealtDGV";
@@ -745,12 +747,23 @@ namespace DairyFarmSystem
             this.Date.Size = new System.Drawing.Size(181, 32);
             this.Date.TabIndex = 94;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1369, 42);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(52, 47);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 96;
+            this.pictureBox9.TabStop = false;
+            // 
             // CowHealth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 970);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.HealtDGV);
@@ -807,6 +820,7 @@ namespace DairyFarmSystem
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HealtDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -864,5 +878,6 @@ namespace DairyFarmSystem
         private Guna.UI2.WinForms.Guna2DataGridView HealtDGV;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker Date;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
