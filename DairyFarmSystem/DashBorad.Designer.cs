@@ -88,6 +88,7 @@ namespace DairyFarmSystem
             this.HighExpDateLbl = new System.Windows.Forms.Label();
             this.HighExpLbl = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -114,6 +115,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel7.SuspendLayout();
             this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -177,7 +179,7 @@ namespace DairyFarmSystem
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(0, 9);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 9);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 55);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -189,7 +191,7 @@ namespace DairyFarmSystem
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(85, 18);
+            this.label19.Location = new System.Drawing.Point(62, 20);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(141, 30);
             this.label19.TabIndex = 5;
@@ -221,7 +223,7 @@ namespace DairyFarmSystem
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(85, 18);
+            this.label16.Location = new System.Drawing.Point(62, 22);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(109, 30);
             this.label16.TabIndex = 5;
@@ -245,7 +247,7 @@ namespace DairyFarmSystem
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(88, 16);
+            this.label17.Location = new System.Drawing.Point(62, 16);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(127, 30);
             this.label17.TabIndex = 6;
@@ -298,7 +300,7 @@ namespace DairyFarmSystem
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(85, 18);
+            this.label7.Location = new System.Drawing.Point(65, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 30);
             this.label7.TabIndex = 5;
@@ -322,7 +324,7 @@ namespace DairyFarmSystem
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(88, 16);
+            this.label15.Location = new System.Drawing.Point(65, 16);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 30);
             this.label15.TabIndex = 6;
@@ -376,7 +378,7 @@ namespace DairyFarmSystem
             this.label6.BackColor = System.Drawing.Color.DimGray;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(65, 13);
+            this.label6.Location = new System.Drawing.Point(62, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 30);
             this.label6.TabIndex = 5;
@@ -409,7 +411,7 @@ namespace DairyFarmSystem
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(88, 16);
+            this.label5.Location = new System.Drawing.Point(65, 16);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 30);
             this.label5.TabIndex = 5;
@@ -787,12 +789,23 @@ namespace DairyFarmSystem
             this.label13.TabIndex = 126;
             this.label13.Text = "Highest Expenditure";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1401, 40);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(52, 47);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 131;
+            this.pictureBox9.TabStop = false;
+            // 
             // DashBorad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 915);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.guna2GradientPanel9);
             this.Controls.Add(this.guna2GradientPanel8);
             this.Controls.Add(this.panel10);
@@ -851,6 +864,7 @@ namespace DairyFarmSystem
             this.guna2GradientPanel8.PerformLayout();
             this.guna2GradientPanel9.ResumeLayout(false);
             this.guna2GradientPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -916,5 +930,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.Label CownumLbl;
         private System.Windows.Forms.Label EmpnumLbl;
         private System.Windows.Forms.Label MilkLbl;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
