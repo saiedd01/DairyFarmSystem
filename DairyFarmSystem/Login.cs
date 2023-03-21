@@ -33,9 +33,19 @@ namespace DairyFarmSystem
         private void LoginBtn_Click(object sender, EventArgs e)
         {
            if(UnameTb.Text=="" || PasswordTb.Text == "")
-            {
+           {
                 MessageBox.Show("Enter UserName And Password");
-            }
+           }
+           else
+           {
+                if (RoleCb.SelectedIndex > -1)
+                {
+                    if(RoleCb.SelectedItem.ToString() == "Admin")
+                    {
+                       
+                    }
+                }
+           }
            
         }
     }
