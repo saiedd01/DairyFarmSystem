@@ -42,7 +42,13 @@ namespace DairyFarmSystem
                 {
                     if(RoleCb.SelectedItem.ToString() == "Admin")
                     {
-                       
+                       if(UnameTb.Text== "Admin" || PasswordTb.Text == "Admin")
+                       {
+                            Employees emp = new Employees();
+                            emp.Show();
+                            this.Hide();
+                       }
+
                     }
                 }
            }
