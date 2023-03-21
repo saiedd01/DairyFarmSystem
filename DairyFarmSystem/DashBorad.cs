@@ -147,5 +147,10 @@ namespace DairyFarmSystem
             HighExpLbl.Text = "Rs " + dt1.Rows[0][0].ToString();
             con.Close();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
