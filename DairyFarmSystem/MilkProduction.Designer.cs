@@ -81,6 +81,7 @@ namespace DairyFarmSystem
             this.CowIdCb = new System.Windows.Forms.ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.MilkDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel8.SuspendLayout();
@@ -98,6 +99,7 @@ namespace DairyFarmSystem
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MilkDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -425,7 +427,7 @@ namespace DairyFarmSystem
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label19.ForeColor = System.Drawing.SystemColors.Control;
-            this.label19.Location = new System.Drawing.Point(85, 18);
+            this.label19.Location = new System.Drawing.Point(62, 18);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(141, 30);
             this.label19.TabIndex = 5;
@@ -456,7 +458,7 @@ namespace DairyFarmSystem
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label16.ForeColor = System.Drawing.SystemColors.Control;
-            this.label16.Location = new System.Drawing.Point(85, 18);
+            this.label16.Location = new System.Drawing.Point(62, 19);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(109, 30);
             this.label16.TabIndex = 5;
@@ -478,7 +480,7 @@ namespace DairyFarmSystem
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label17.ForeColor = System.Drawing.SystemColors.Control;
-            this.label17.Location = new System.Drawing.Point(88, 16);
+            this.label17.Location = new System.Drawing.Point(62, 16);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(127, 30);
             this.label17.TabIndex = 6;
@@ -529,7 +531,7 @@ namespace DairyFarmSystem
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(85, 18);
+            this.label7.Location = new System.Drawing.Point(65, 19);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(119, 30);
             this.label7.TabIndex = 5;
@@ -551,7 +553,7 @@ namespace DairyFarmSystem
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label15.ForeColor = System.Drawing.SystemColors.Control;
-            this.label15.Location = new System.Drawing.Point(88, 16);
+            this.label15.Location = new System.Drawing.Point(65, 16);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(90, 30);
             this.label15.TabIndex = 6;
@@ -604,7 +606,7 @@ namespace DairyFarmSystem
             this.label6.BackColor = System.Drawing.Color.Gray;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(65, 13);
+            this.label6.Location = new System.Drawing.Point(62, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(196, 30);
             this.label6.TabIndex = 5;
@@ -635,7 +637,7 @@ namespace DairyFarmSystem
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(88, 16);
+            this.label5.Location = new System.Drawing.Point(62, 18);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 30);
             this.label5.TabIndex = 5;
@@ -713,12 +715,23 @@ namespace DairyFarmSystem
             this.MilkDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.MilkDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MilkDGV_CellContentClick);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1390, 42);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(52, 47);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 93;
+            this.pictureBox9.TabStop = false;
+            // 
             // MilkProduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1482, 970);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.MilkDGV);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.CowIdCb);
@@ -773,6 +786,7 @@ namespace DairyFarmSystem
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MilkDGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -827,5 +841,6 @@ namespace DairyFarmSystem
         private System.Windows.Forms.ComboBox CowIdCb;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2DataGridView MilkDGV;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
