@@ -57,7 +57,12 @@ namespace DairyFarmSystem
                     {
                         con.Open();
                         SqlDataAdapter sda = new SqlDataAdapter("Select count(*) from EmployeeTbl where EmpName='"+UnameTb.Text+ "'and EmpPass='" + PasswordTb.Text + "'",con);
+                        DataTable dt = new DataTable();
+                        sda.Fill(dt);
+                        if(dt.Rows[0][0].ToString()== "1")
+                        {
 
+                        }
                     }
                 }
            }
