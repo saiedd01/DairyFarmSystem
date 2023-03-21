@@ -48,6 +48,15 @@ namespace DairyFarmSystem
                             emp.Show();
                             this.Hide();
                        }
+                       else
+                       {
+                            MessageBox.Show("If You are Admin, Enter The Correct Id and Password");
+                       }
+                    }
+                    else
+                    {
+                        con.Open();
+                        SqlDataAdapter sda = new SqlDataAdapter("Select count(*) from EmployeeTbl where EmpName='"+UnameTb.Text+ "'and EmpPass='" + PasswordTb.Text + "'",con);
 
                     }
                 }
