@@ -56,9 +56,12 @@ namespace DairyFarmSystem
             this.NameTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
             this.EmpPassTb = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.EmpDGV)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // EmpDGV
@@ -247,6 +250,7 @@ namespace DairyFarmSystem
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.DimGray;
+            this.guna2GradientPanel1.Controls.Add(this.pictureBox9);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(276, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
@@ -400,6 +404,16 @@ namespace DairyFarmSystem
             this.EmpPassTb.TabIndex = 153;
             this.EmpPassTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(1150, 3);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(44, 34);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 155;
+            this.pictureBox9.TabStop = false;
+            // 
             // Employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
@@ -433,9 +447,11 @@ namespace DairyFarmSystem
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employees";
             ((System.ComponentModel.ISupportInitialize)(this.EmpDGV)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,5 +482,6 @@ namespace DairyFarmSystem
         private Bunifu.Framework.UI.BunifuMaterialTextbox NameTb;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox EmpPassTb;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
